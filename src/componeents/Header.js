@@ -14,17 +14,17 @@ export default function Header() {
             >
               <img
                 src={require("./ITHUB.png")}
-                class="h-16 w-16md:h-24md:w-24rounded-fullmx-automd:mx-0md:mr-6"
+                class="h-10 w-10md:h-24md:w-24rounded-fullmx-automd:mx-0md:mr-6"
                 alt="Hello"
               />
-              <span class="ml-3 text-xl">IT Hub School</span>
+              <span class=" text-xl">IT Hub</span>
             </Link>
             <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-              <Link to="/" class="mr-5 hover:text-gray-900">
+              <Link to="/" class="mr-4 hover:text-blue-400">
                 Home
               </Link>
 
-              <a href="#webinar" class="mr-5 hover:text-gray-900">
+              <a href="#webinar" class="ml-4 hover:text-gray-900">
                 Webinars
               </a>
             </nav>
