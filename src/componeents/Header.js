@@ -24,7 +24,7 @@ export default function Header() {
                 Home
               </Link>
 
-              <a href="#webinar" class="ml-4 hover:text-gray-900">
+              <a href="#webinar" class="ml-4 hover:text-blue-400">
                 Webinars
               </a>
             </nav>
