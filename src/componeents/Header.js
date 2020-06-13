@@ -19,15 +19,15 @@ export default function Header() {
             <span class=" text-xl">IT Hub</span>
           </Link>
           <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-            <Link to="/" class="mr-4 hover:text-blue-400">
+            <Link to="/" class="mr-6 hover:text-blue-400">
               Home
             </Link>
-            <Link to="/scholorship" class="mr-4 hover:text-blue-400">
+            <Link to="/scholorship" class="mr-6 hover:text-blue-400">
               Scholorships
             </Link>
-            <a href="#webinar" class="hover:text-blue-400">
-              Webinars
-            </a>
+            <Link to="/about" class="hover:text-blue-400">
+              About Us
+            </Link>
           </nav>
           <button
             class={

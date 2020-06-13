@@ -1,8 +1,9 @@
 import React from "react";
-import Hero from "../componeents/Hero";
+import Hero from "../componeents/HeroHome";
 import Content from "../componeents/Content";
 import Contact from "../componeents/Contact";
 import Carousel from "../componeents/Carousel";
+import Features from "../componeents/Features";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       <Hero />
       <hr />
       <Content />
-      <Contact />
+      <Features />
     </div>
   );
 }

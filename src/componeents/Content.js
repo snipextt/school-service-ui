@@ -14,8 +14,9 @@ export default function Content() {
             </div>
             <p className="lg:w-1/2 w-full leading-relaxed text-base">
               Learn from the leading trainers in the industry and build on your
-              skills. Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              skills. Kick start your carrear as a software engineer in no time.
+              We also offer financial help for people who wants to learn with
+              us. To know more
             </p>
           </div>
           <div className="flex flex-wrap -m-4">
@@ -30,11 +31,11 @@ export default function Content() {
                   SUBTITLE
                 </h3>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Chichen Itza
+                  Cyber Security
                 </h2>
                 <p className="leading-relaxed text-base">
                   Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  Distillery
                 </p>
               </div>
             </div>
@@ -46,14 +47,14 @@ export default function Content() {
                   alt="content"
                 />
                 <h3 className="tracking-widest text-teal-500 text-xs font-medium title-font">
-                  SUBTITLE
+                  Vishwajit Nerkar's
                 </h3>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Colosseum Roma
+                  Front End Master
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  Microsoft STC Trainer | Josh Talks Speaker | Technical
+                  Recruiter
                 </p>
               </div>
             </div>
@@ -65,14 +66,14 @@ export default function Content() {
                   alt="content"
                 />
                 <h3 className="tracking-widest text-teal-500 text-xs font-medium title-font">
-                  SUBTITLE
+                  Abhishek Maurya's
                 </h3>
                 <h2 className="text-lg text-gray-900 font-medium title-font mb-4">
-                  Great Pyramid of Giza
+                  AWS Cloud Computing
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  <br />
+                  Cloud Developer @<a href="https://www.tcs.com/">TCS</a>
                 </p>
               </div>
             </div>
@@ -91,7 +92,7 @@ export default function Content() {
                 </h2>
                 <p className="leading-relaxed text-base">
                   Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery hexagon disrupt edison bulbche.
+                  Distillery
                 </p>
               </div>
             </div>
