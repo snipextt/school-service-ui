@@ -1,5 +1,5 @@
 import React from "react";
-import "./carousel.css";
+import "../Static/carousel.css";
 import ImageGallery from "react-image-gallery";
 
 const images = [

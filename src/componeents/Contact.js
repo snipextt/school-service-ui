@@ -26,7 +26,8 @@ const handleClick = () => {
       })
       .then(function (response) {
         console.log(response);
-      });
+      })
+      .catch(console.error);
   }
 };
 

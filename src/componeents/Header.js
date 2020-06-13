@@ -12,7 +12,7 @@ export default function Header() {
             class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
           >
             <img
-              src={require("./ITHUB.png")}
+              src={require("../Static/ITHUB.png")}
               class="h-10 w-10md:h-24md:w-24rounded-fullmx-automd:mx-0md:mr-6"
               alt="Hello"
             />
