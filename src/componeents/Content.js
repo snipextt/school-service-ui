@@ -8,16 +8,10 @@ export default function Content() {
           <div className="flex flex-wrap w-full mb-20">
             <div className="lg:w-1/2 w-full mb-6 lg:mb-0">
               <h1 className="sm:text-3xl text-2xl font-medium title-font mb-2 text-gray-900">
-                Upcoming Webinars
+                Upcoming Sessions
               </h1>
               <div className="h-1 w-20 bg-teal-500 rounded" />
             </div>
-            <p className="lg:w-1/2 w-full leading-relaxed text-base">
-              Learn from the leading trainers in the industry and build on your
-              skills. Kick start your carrear as a software engineer in no time.
-              We also offer financial help for people who wants to learn with
-              us. To know more
-            </p>
           </div>
           <div className="flex flex-wrap -m-4">
             <div className="xl:w-1/4 md:w-1/2 p-4">

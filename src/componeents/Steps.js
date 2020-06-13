@@ -32,11 +32,10 @@ export default function Steps() {
               </div>
               <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                  Apply
+                  Fill the Scholorship Form !
                 </h2>
                 <p className="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
+                  Tell us why you need this Scolorship! Share your Goals that Inspire you.
                 </p>
               </div>
             </div>
@@ -64,11 +63,10 @@ export default function Steps() {
               </div>
               <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                  Apply
+                  Approval 
                 </h2>
                 <p className="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
+                  Wait for our Team to Revert! Till then keep learning.
                 </p>
               </div>
             </div>
@@ -97,11 +95,10 @@ export default function Steps() {
               </div>
               <div className="flex-grow sm:pl-6 mt-6 sm:mt-0">
                 <h2 className="font-medium title-font text-gray-900 mb-1 text-xl">
-                  Apply
+                  Tag us and share happiness!
                 </h2>
                 <p className="leading-relaxed">
-                  VHS cornhole pop-up, try-hard 8-bit iceland helvetica. Kinfolk
-                  bespoke try-hard cliche palo santo offal.
+                  We believe in sharing happiness. If you are selected that means you are a Gem !
                 </p>
               </div>
             </div>

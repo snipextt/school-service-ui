@@ -10,9 +10,7 @@ export default function Features() {
               Features
             </h1>
             <p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto">
-              Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-              taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh
-              mi pug.
+            
             </p>
             <div className="flex mt-6 justify-center">
               <div className="w-16 h-1 rounded-full bg-teal-500 inline-flex" />
@@ -38,24 +36,9 @@ export default function Features() {
                   One to One Mentoring
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                 While everyone is focusing on just completing the course! We focus on mentoring you and make you Job Ready
                 </p>
-                <a className="mt-3 text-teal-500 inline-flex items-center">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+               
               </div>
             </div>
             <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
@@ -79,24 +62,9 @@ export default function Features() {
                   Industry Standard Course
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  We ensure quality in what we deliver! Content that the Market demands is what we teach you. Learn with us and we make sure you get your first job!
                 </p>
-                <a className="mt-3 text-teal-500 inline-flex items-center">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+             
               </div>
             </div>
             <div className="p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center">
@@ -119,30 +87,13 @@ export default function Features() {
                   Live Classes
                 </h2>
                 <p className="leading-relaxed text-base">
-                  Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-                  taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-                  banh mi pug VHS try-hard.
+                  Education with Safety! In this pandemic, we ensure to provide you the best education with our Live Classes! Learn from your Home.
                 </p>
-                <a className="mt-3 text-teal-500 inline-flex items-center">
-                  Learn More
-                  <svg
-                    fill="none"
-                    stroke="currentColor"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    className="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                  >
-                    <path d="M5 12h14M12 5l7 7-7 7" />
-                  </svg>
-                </a>
+               
               </div>
             </div>
           </div>
-          <button className="flex mx-auto mt-16 text-white bg-teal-500 border-0 py-2 px-8 focus:outline-none hover:bg-teal-600 rounded text-lg">
-            Button
-          </button>
+
         </div>
       </section>
     </div>

@@ -35,25 +35,18 @@ export default function HeroScholor() {
                   </h2>
                   <div className="w-12 h-1 bg-pink-500 rounded mt-2 mb-4" />
                   <p className="text-base text-gray-600">
-                    Raclette knausgaard hella meggs normcore williamsburg enamel
-                    pin sartorial venmo tbh hot chicken gentrify portland.
+                    Microsoft STC Trainer | HR Associate | Josh Talks Speaker
                   </p>
                 </div>
               </div>
               <div className="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-300 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
                 <p className="leading-relaxed text-lg mb-4">
-                  Meggings portland fingerstache lyft, post-ironic fixie man bun
-                  banh mi umami everyday carry hexagon locavore direct trade art
-                  party. Locavore small batch listicle gastropub farm-to-table
-                  lumbersexual salvia messenger bag. Coloring book flannel
-                  truffaut craft beer drinking vinegar sartorial, disrupt
-                  fashion axe normcore meh butcher. Portland 90's scenester
-                  vexillologist forage post-ironic asymmetrical, chartreuse
-                  disrupt butcher paleo intelligentsia pabst before they sold
-                  out four loko. 3 wolf moon brooklyn.
+                 Vishwajit Nerkar is providing you Scholorship in which he will be delivering the course content in just 299/-. The Course costs originally for 3000 INR. Grab this Golden Opportunity and book your seat. The selected Candidates will receive the cofirmation on their registered mail id. <br/><br/>
+      
+                <i>For Course Content Contact :<br/> Tushar Verma - 7970715070</i>
                 </p>
                 <a className="text-pink-500 inline-flex items-center">
-                  Learn More
+                  Enroll Now
                   <svg
                     fill="none"
                     stroke="currentColor"

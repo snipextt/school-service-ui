@@ -21,13 +21,13 @@ export default function Hero() {
             <p class="mb-8 leading-relaxed">
               Bored by staring at the screen and listening to recorded lectures
               ? Join IT HUB School, this is your one stop solution when it comes
-              to Live Training. we deliver the best & professional learning
+              to Live Training. We deliver the best & professional learning
               modules that are job-oriented and practical in nature.
               <br />
             </p>
             <div class="flex justify-center">
               <button class="inline-flex text-white bg-teal-500 border-0 py-2 px-6 focus:outline-none hover:bg-blue-600 rounded text-lg">
-                Peek at Upcoming Events?
+                Enroll with us now !
               </button>
             </div>
           </div>
