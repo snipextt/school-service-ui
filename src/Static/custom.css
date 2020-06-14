@@ -96,7 +96,7 @@ body {
 
 @media only screen and (max-width: 600px) {
     .content-home {
-        border-radius: 25%;
+        border-radius: 5%;
     }
 }
 

@@ -31,8 +31,8 @@ export default function About() {
             <h1 className="title-font sm:text-4xl text-3xl font-medium text-gray-900 my-0">
               IT Hub School
             </h1>
-            <div className="h-1 w-20 bg-teal-500 rounded mb-8" />
-            <p className="mb-8 leading-relaxed">
+            <div className="h-1 w-20 bg-teal-500 rounded mb-4" />
+            <p className="mb-8 leading-relaxed p-6 lg:p-0 text-center">
               We are an outsourced Project taking and online-training providing
               company founded by Gaurav Roy. Our company has 2 main motives: On
               one hand, we deliver the best & professional learning modules that
