@@ -24,9 +24,9 @@ export default function Team() {
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Lorem Ipsum
+                    Gaurav Roy
                   </h2>
-                  <p className="text-gray-500">UI Designer</p>
+                  <p className="text-gray-500">Cyber Security Researcher</p>
                 </div>
               </div>
             </div>
@@ -39,9 +39,9 @@ export default function Team() {
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Lorem Ipsum
+                    Vishwajit Nerkar
                   </h2>
-                  <p className="text-gray-500">CTO</p>
+                  <p className="text-gray-500">Web Developer</p>
                 </div>
               </div>
             </div>
@@ -54,9 +54,9 @@ export default function Team() {
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Lorem Ipsum
+                    Manish Kumar
                   </h2>
-                  <p className="text-gray-500">Founder</p>
+                  <p className="text-gray-500">Bug Hunter</p>
                 </div>
               </div>
             </div>
@@ -69,7 +69,7 @@ export default function Team() {
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Lorem Ipsum
+                    Abhishek Mayrya
                   </h2>
                   <p className="text-gray-500">DevOps</p>
                 </div>
@@ -84,9 +84,9 @@ export default function Team() {
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Lorem Ipsum
+                    Tushar Verma
                   </h2>
-                  <p className="text-gray-500">Software Engineer</p>
+                  <p className="text-gray-500">Bug Hunter</p>
                 </div>
               </div>
             </div>
@@ -95,13 +95,13 @@ export default function Team() {
                 <img
                   alt="team"
                   className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/98x98"
+                  src={require("../Static/himanshu.jpg")}
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Lorem Ipsum
+                    Himanshu Parihar
                   </h2>
-                  <p className="text-gray-500">UX Researcher</p>
+                  <p className="text-gray-500">Soft skills Instructor</p>
                 </div>
               </div>
             </div>
@@ -114,9 +114,9 @@ export default function Team() {
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Lorem Ipsum
+                    Sahaj Oberoi
                   </h2>
-                  <p className="text-gray-500">QA Engineer</p>
+                  <p className="text-gray-500">Python Instructor</p>
                 </div>
               </div>
             </div>
@@ -129,7 +129,7 @@ export default function Team() {
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Lorem Ipsum
+                    Harshit Manaktala
                   </h2>
                   <p className="text-gray-500">System</p>
                 </div>
@@ -144,7 +144,7 @@ export default function Team() {
                 />
                 <div className="flex-grow">
                   <h2 className="text-gray-900 title-font font-medium">
-                    Lorem Ipsum
+                    Pratyaksh Singh
                   </h2>
                   <p className="text-gray-500">Product Manager</p>
                 </div>
