@@ -1,4 +1,69 @@
 import React from "react";
+const MemberCard = ({ imgSrc, name, designation }) => {
+  return (
+    <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
+      <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+        <img
+          alt="team"
+          className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
+          src={imgSrc}
+        />
+        <div className="flex-grow">
+          <h2 className="text-gray-900 title-font font-medium">{name}</h2>
+          <p className="text-gray-500">{designation}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+const members = [
+  {
+    name: "Gaurav Roy",
+    imgSrc: "https://dummyimage.com/84x84",
+    designation: "CEO and Founder",
+  },
+  {
+    name: "Manish Kumar",
+    imgSrc: "https://dummyimage.com/84x84",
+    designation: "CTO",
+  },
+  {
+    name: "Viswajit Nerker",
+    imgSrc: "https://dummyimage.com/84x84",
+    designation: "COO",
+  },
+  {
+    name: "Himanshu Parihar",
+    imgSrc: "https://dummyimage.com/84x84",
+    designation: "Product and Growth Analyst",
+  },
+  {
+    name: "Tushar Verma",
+    imgSrc: "https://dummyimage.com/84x84",
+    designation: "Co-founder",
+  },
+  {
+    name: "Abhishek Maurya",
+    imgSrc: "https://dummyimage.com/84x84",
+    designation: "Marketing Head",
+  },
+  {
+    name: "Venkatesh L Sharma",
+    imgSrc: "https://dummyimage.com/84x84",
+    designation: "Cybersecurity Advisor",
+  },
+  {
+    name: "Sahaj Oberoi",
+    imgSrc: "https://dummyimage.com/84x84",
+    designation: "Python Trainer",
+  },
+  {
+    name: "Pratyaksh Singh",
+    imgSrc: "https://dummyimage.com/84x84",
+    designation: "Linux Trainer",
+  },
+];
 
 export default function Team() {
   return (
@@ -15,141 +80,9 @@ export default function Team() {
             </p>
           </div>
           <div className="flex flex-wrap -m-2">
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/80x80"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Gaurav Roy
-                  </h2>
-                  <p className="text-gray-500">Cyber Security Researcher</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/84x84"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Vishwajit Nerkar
-                  </h2>
-                  <p className="text-gray-500">Web Developer</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/88x88"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Manish Kumar
-                  </h2>
-                  <p className="text-gray-500">Bug Hunter</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/90x90"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Abhishek Mayrya
-                  </h2>
-                  <p className="text-gray-500">DevOps</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/94x94"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Tushar Verma
-                  </h2>
-                  <p className="text-gray-500">Bug Hunter</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src={require("../Static/himanshu.jpg")}
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Himanshu Parihar
-                  </h2>
-                  <p className="text-gray-500">Soft skills Instructor</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/100x90"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Sahaj Oberoi
-                  </h2>
-                  <p className="text-gray-500">Python Instructor</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/104x94"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Harshit Manaktala
-                  </h2>
-                  <p className="text-gray-500">System</p>
-                </div>
-              </div>
-            </div>
-            <div className="p-2 lg:w-1/3 md:w-1/2 w-full">
-              <div className="h-full flex items-center border-gray-200 border p-4 rounded-lg">
-                <img
-                  alt="team"
-                  className="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4"
-                  src="https://dummyimage.com/108x98"
-                />
-                <div className="flex-grow">
-                  <h2 className="text-gray-900 title-font font-medium">
-                    Pratyaksh Singh
-                  </h2>
-                  <p className="text-gray-500">Product Manager</p>
-                </div>
-              </div>
-            </div>
+            {members.map((elem) => (
+              <MemberCard {...elem} key={Math.ceil(Math.random() * 100)} />
+            ))}
           </div>
         </div>
       </section>
