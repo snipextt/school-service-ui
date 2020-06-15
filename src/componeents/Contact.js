@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import axios from "axios";
+import { motion } from "framer-motion";
 const isEmpty = (string) => (string.value.trim() === "" ? true : false);
 const isEmail = (email) =>
   email.value.match(
@@ -8,30 +9,40 @@ const isEmail = (email) =>
     ? true
     : false;
 
-const handleClick = () => {
-  let inputs = document.querySelectorAll("input");
-  let textarea = document.querySelector("textarea");
-  if (
-    isEmpty(inputs[0]) ||
-    isEmpty(inputs[1]) ||
-    isEmpty(textarea) ||
-    !isEmail(inputs[1])
-  ) {
-    alert("Invalid fields");
-  } else {
-    axios
-      .post("/api", {
-        email: inputs[1].value,
-        content: textarea.value,
-      })
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch(console.error);
-  }
-};
-
 export default function Contact() {
+  const [isSending, setIsSending] = useState(false);
+  const [isSucess, setIsSucess] = useState(null);
+  const handleClick = (e) => {
+    let inputs = document.querySelectorAll("input");
+    let textarea = document.querySelector("textarea");
+    if (
+      isEmpty(inputs[0]) ||
+      isEmpty(inputs[1]) ||
+      isEmpty(textarea) ||
+      !isEmail(inputs[1])
+    ) {
+      alert("Invalid fields");
+    } else {
+      console.log(e.target);
+      setIsSending(true);
+      setIsSucess(null);
+      axios
+        .post("/api", {
+          email: inputs[1].value,
+          content: textarea.value,
+        })
+        .then(function (response) {
+          console.log(response);
+          setIsSending(false);
+          setIsSucess(true);
+        })
+        .catch((err) => {
+          console.error(err);
+          setIsSending(false);
+          setIsSucess(false);
+        });
+    }
+  };
   return (
     <div>
       <section className="text-gray-700 body-font relative">
@@ -75,22 +86,55 @@ export default function Contact() {
               className="bg-white rounded border border-gray-400 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mb-4"
               placeholder="Name"
               type="text"
+              disabled={isSending}
             />
             <input
               className="bg-white rounded border border-gray-400 focus:outline-none focus:border-teal-500 text-base px-4 py-2 mb-4"
               placeholder="Email"
               type="email"
+              disabled={isSending}
             />
             <textarea
               className="bg-white rounded border border-gray-400 focus:outline-none h-32 focus:border-teal-500 text-base px-4 py-2 mb-4 resize-none"
               placeholder="Message"
               defaultValue={""}
+              disabled={isSending}
             />
+            {isSucess != null ? (
+              isSucess ? (
+                <motion.p
+                  animate={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-teal-400 mb-4"
+                >
+                  Recieved. Hope to hear from us soon!
+                </motion.p>
+              ) : (
+                <motion.p
+                  animate={{ opacity: 1 }}
+                  initial={{ opacity: 0 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5 }}
+                  className="text-red-400 mb-4"
+                >
+                  Something went wrong, please try again! again!
+                </motion.p>
+              )
+            ) : (
+              ""
+            )}
             <button
               className="text-white bg-teal-500 border-0 py-2 px-6 focus:outline-none hover:bg-teal-600 rounded text-lg"
               onClick={handleClick}
+              disabled={isSending}
             >
-              Button
+              {isSending ? (
+                <i className="fas fa-circle-notch fa-spin fa-2x"></i>
+              ) : (
+                "Send it in!"
+              )}
             </button>
             <p className="text-xs text-gray-500 mt-3">We don't spam</p>
           </div>

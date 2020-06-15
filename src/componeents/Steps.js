@@ -3,11 +3,8 @@ import React from "react";
 export default function Steps() {
   return (
     <div className="content-scholor">
-      <section className="text-gray-700 body-font">
-        <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-2 mt-4 lg:mb-4 text-center">
-          Apply for a Scholorship
-        </h1>
-        <div className="container px-5 py-10 mx-auto flex flex-wrap lg:py-16">
+      <section className="text-gray-700 body-font lg:py-20">
+        <div className="container  mx-auto flex flex-wrap ">
           <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
             <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
               <div className="h-full w-1 bg-gray-200 pointer-events-none" />

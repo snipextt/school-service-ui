@@ -7,7 +7,6 @@ import Zoom from "react-reveal/Zoom";
 export default function About() {
   useEffect(() => {
     document.querySelector(".about").classList.toggle("nav-highlight");
-    window.scrollTo(0, 0);
     setTimeout(
       () => document.querySelector("#loader").classList.add("hidden-loader"),
       2000

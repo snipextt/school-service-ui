@@ -1,4 +1,5 @@
 import React from "react";
+
 const Card = (props) => {
   return (
     <div className="xl:w-1/4 md:w-1/2 p-4 ">
@@ -19,6 +20,7 @@ const Card = (props) => {
     </div>
   );
 };
+
 export default function Content() {
   return (
     <div id="webinar" className="mt-24">
@@ -34,10 +36,9 @@ export default function Content() {
           </div>
           <div className="flex flex-wrap -m-4 ">
             <Card
-              subtitle="Vishwajit Nerkar's"
-              course="Cyber Security"
-              content="Microsoft STC Trainer | Josh Talks Speaker | Technical
-                  Recruiter"
+              subtitle="Sahaj Oboroi's"
+              course="Intro to Python Programming"
+              content="GirlScript Tech Lead | Python Developer"
               imgsrc="3.png"
             />
             <Card
@@ -48,16 +49,15 @@ export default function Content() {
               imgsrc="1.png"
             />
             <Card
-              subtitle="Abhishek Maurya's"
-              course="AWS Cloud Computing"
-              content="Cloud Developer @TCS"
+              subtitle="Tushar Verma's"
+              course="Bug Bounty Training"
+              content="Bug Hunter"
               imgsrc="2.png"
             />
             <Card
-              subtitle="SUBTITLE"
-              course="San Francisco"
-              content="Fingerstache flexitarian street art 8-bit waistcoat.
-                  Distillery"
+              subtitle="Himanshu Pariyar's"
+              course="Surmount Your Soft Skills"
+              content="Certified Trainer | 6+ years of Experience"
               imgsrc="4.png"
             />
           </div>

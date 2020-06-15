@@ -1,15 +1,14 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../componeents/HeroHome";
 import Content from "../componeents/Content";
-import Carousel from "../componeents/Carousel";
 import Features from "../componeents/Features";
 import { motion } from "framer-motion";
 import Zoom from "react-reveal/Zoom";
 
 export default function Home() {
+  const [imageLoaded, setImageLoaded] = useState(false);
   useEffect(() => {
     document.querySelector(".home").classList.toggle("nav-highlight");
-    window.scrollTo(0, 0);
     setTimeout(
       () => document.querySelector("#loader").classList.add("hidden-loader"),
       2000
@@ -17,7 +16,7 @@ export default function Home() {
     return () => {
       document.querySelector(".home").classList.toggle("nav-highlight");
     };
-  }, []);
+  }, [imageLoaded]);
   return (
     <motion.div
       animate={{ opacity: 1 }}
@@ -28,14 +27,14 @@ export default function Home() {
       }}
     >
       <br />
-      <Carousel />
-      <Zoom>
-        <Hero />
-        <div className="content-home ">
+
+      <Hero />
+      <div className="content-home ">
+        <Zoom>
           <Content />
           <Features />
-        </div>
-      </Zoom>
+        </Zoom>
+      </div>
     </motion.div>
   );
 }

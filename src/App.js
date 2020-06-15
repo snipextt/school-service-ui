@@ -1,18 +1,33 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Header from "./componeents/Header";
 import "./Static/custom.css";
 import Home from "./pages/Home";
 import Scholorships from "./pages/Scholorship";
 import About from "./pages/About";
 import Footer from "./componeents/Footer";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  useLocation,
+} from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    document.getElementById("root").scrollIntoView();
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
     <div className="">
       <Router>
         <Header />
+        <ScrollToTop />
         <AnimatePresence exitBeforeEnter>
           <Switch>
             <Route exact path="/" component={Home} />

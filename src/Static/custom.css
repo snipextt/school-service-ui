@@ -58,9 +58,8 @@ body {
 }
 
 .content-home {
-    border-radius: 90%;
-    background: #f7f7f7 url('../Static/path4.png');
-    background-size: 1000px;
+    background-image: #e2e8f0 url('../Static/path4.png') !;
+    background-size: 300px;
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 4rem;

@@ -3,16 +3,9 @@ import React from "react";
 export default function HeroScholor() {
   return (
     <div>
-      <section className="text-gray-700 body-font">
-        <div className="container px-5 py-12 mx-auto flex flex-col">
-          <div className="lg:w-4/6 mx-auto">
-            <div className="rounded-lg h-64 flex flex-wrap justify-center">
-              <img
-                alt="content"
-                className="object-fill object-center img-scholor"
-                src={require("../Static/scholor.png")}
-              />
-            </div>
+      <section className="text-gray-700 body-font mb-12 lg:px-0 px-8">
+        <div className="container mx-auto flex flex-col">
+          <div className="lg:w-5/6 mx-auto">
             <div className="flex flex-col sm:flex-row mt-24">
               <div className="sm:w-1/3 text-center sm:pr-8 sm:py-8">
                 <div className="w-20 h-20 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400">
@@ -36,7 +29,7 @@ export default function HeroScholor() {
 
                   <div className="w-12 h-1 bg-pink-500 rounded mt-2 mb-4 hero-scholor" />
                   <p className="text-base text-gray-600">
-                    Microsoft STC Trainer | HR Associate | Josh Talks Speaker
+                    Microsoft STC Trainer
                   </p>
                 </div>
               </div>
@@ -49,12 +42,9 @@ export default function HeroScholor() {
                   your seat. The selected Candidates will receive the
                   cofirmation on their registered mail id. <br />
                   <br />
-                  <i>
-                    For Course Content Contact :<br /> Tushar Verma - 7970715070
-                  </i>
                 </p>
                 <a href="/" className="text-pink-500 inline-flex items-center">
-                  Enroll Now
+                  Learn More
                   <svg
                     fill="none"
                     stroke="currentColor"
