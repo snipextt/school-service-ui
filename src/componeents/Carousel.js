@@ -18,17 +18,5 @@ const images = [
 ];
 
 export default function Carousel({}) {
-  return (
-    <div>
-      <ImageGallery
-        items={images}
-        showThumbnails={false}
-        showFullscreenButton={false}
-        autoPlay={true}
-        showPlayButton={false}
-        showNav={false}
-      />
-      ;
-    </div>
-  );
+  return <div className="carousel"></div>;
 }

@@ -7,14 +7,15 @@ import Zoom from "react-reveal/Zoom";
 
 export default function Home() {
   const [imageLoaded, setImageLoaded] = useState(false);
+
   useEffect(() => {
-    document.querySelector(".home").classList.toggle("nav-highlight");
+    //document.querySelector(".home").classList.toggle("nav-highlight");
     setTimeout(
       () => document.querySelector("#loader").classList.add("hidden-loader"),
       2000
     );
     return () => {
-      document.querySelector(".home").classList.toggle("nav-highlight");
+      // document.querySelector(".home").classList.toggle("nav-highlight");
     };
   }, [imageLoaded]);
   return (
@@ -26,7 +27,7 @@ export default function Home() {
         duration: 1.5,
       }}
     >
-      <br />
+      {/*<br />*/}
 
       <Hero />
       <div className="content-home ">

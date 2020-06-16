@@ -1,18 +1,16 @@
 import React, { useEffect } from "react";
-import Team from "../componeents/Team";
-import Contact from "../componeents/Contact";
+import Tabs from "../componeents/Tabs";
 import { motion } from "framer-motion";
-import Zoom from "react-reveal/Zoom";
 
 export default function About() {
   useEffect(() => {
-    document.querySelector(".about").classList.toggle("nav-highlight");
+    //document.querySelector(".about").classList.toggle("nav-highlight");
     setTimeout(
       () => document.querySelector("#loader").classList.add("hidden-loader"),
       2000
     );
     return () => {
-      document.querySelector(".about").classList.toggle("nav-highlight");
+      //document.querySelector(".about").classList.toggle("nav-highlight");
     };
   }, []);
   return (
@@ -24,36 +22,50 @@ export default function About() {
         ease: "easeIn",
       }}
     >
-      <section className="text-gray-700 body-font">
-        <div className="container mx-auto flex py-24 md:flex-row flex-col items-center">
-          <div className="lg:flex-grow md:w-1/2 lg:pr-20 md:pr-12 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center about-hero ">
-            <h1 className="title-font sm:text-4xl text-3xl font-medium text-gray-900 my-0">
-              IT Hub School
-            </h1>
-            <div className="h-1 w-20 bg-teal-500 rounded mb-4" />
-            <p className="mb-8 leading-relaxed p-6 lg:p-0 text-center">
-              We are an outsourced Project taking and online-training providing
-              company founded by Gaurav Roy. Our company has 2 main motives: On
-              one hand, we deliver the best & professional learning modules that
-              are job-oriented and practical in nature. On the other hand, we
-              take freelance projects and outsourced projects from different
-              companies worldwide, and smartly deliver the project on time with
-              accuracy and efficiency.
-            </p>
+      <main className="profile-page">
+        <section className="relative block" style={{ height: "500px" }}>
+          <div
+            className="absolute top-0 w-full h-full bg-center bg-cover"
+            style={{
+              backgroundImage:
+                "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80')",
+            }}
+          >
+            <span
+              id="blackOverlay"
+              className="w-full h-full absolute opacity-50 bg-black"
+            ></span>
           </div>
-          <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 ml-8">
-            <img
-              className="object-cover object-center rounded"
-              alt="hero"
-              src={require("../Static/pm.jpg")}
-            />
+          <div
+            className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+            style={{ height: "70px", transform: "translateZ(0)" }}
+          >
+            <svg
+              className="absolute bottom-0 overflow-hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              version="1.1"
+              viewBox="0 0 2560 100"
+              x="0"
+              y="0"
+            >
+              <polygon
+                className="text-gray-300 fill-current"
+                points="2560 0 2560 100 0 100"
+              ></polygon>
+            </svg>
           </div>
-        </div>
-      </section>
-      <Team />
-      <Zoom>
-        <Contact />
-      </Zoom>
+        </section>
+        <section className="relative py-16 bg-gray-300">
+          <div className="container mx-auto px-4">
+            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+              <div className="px-6">
+                <Tabs />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
     </motion.div>
   );
 }

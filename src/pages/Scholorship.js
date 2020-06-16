@@ -8,13 +8,13 @@ import Zoom from "react-reveal/Zoom";
 
 export default function Scholorship() {
   useEffect(() => {
-    document.querySelector(".scholorships").classList.toggle("nav-highlight");
+    //document.querySelector(".scholorships").classList.toggle("nav-highlight");
     setTimeout(
       () => document.querySelector("#loader").classList.add("hidden-loader"),
       2000
     );
     return () => {
-      document.querySelector(".scholorships").classList.toggle("nav-highlight");
+      //document.querySelector(".scholorships").classList.toggle("nav-highlight");
     };
   }, []);
   return (
@@ -27,17 +27,13 @@ export default function Scholorship() {
       }}
       exit={{ x: "-100vw" }}
     >
-      <br />
       <Carousel />
-      <h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-2 mt-4 lg:mb-4 text-center">
-        Apply for a Scholorship
-      </h1>
-      <div className="flex lg:flex-row flex-col">
+
+      <section className="relative py-16 bg-gray-300 ">
         <Zoom>
-          <Steps />
           <Hero />
         </Zoom>
-      </div>
+      </section>
       <Zoom>
         <Form />
       </Zoom>

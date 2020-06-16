@@ -1,59 +1,148 @@
-/* eslint-disable no-restricted-globals */
-import React from "react";
-import { Link } from "react-router-dom";
+import * as React from "react";
+import { useRef } from "react";
+import { motion, useCycle } from "framer-motion";
 
-export default function Header() {
+import { useEffect } from "react";
+
+// Naive implementation - in reality would want to attach
+// a window or resize listener. Also use state/layoutEffect instead of ref/effect
+// if this is important to know on initial client render.
+// It would be safer to  return null for unmeasured states.
+const useDimensions = (ref) => {
+  const dimensions = useRef({ width: 0, height: 0 });
+
+  useEffect(() => {
+    dimensions.current.width = ref.current.offsetWidth;
+    dimensions.current.height = ref.current.offsetHeight;
+  }, []);
+
+  return dimensions.current;
+};
+
+const variants1 = {
+  open: {
+    transition: { staggerChildren: 0.07, delayChildren: 0.2 },
+  },
+  closed: {
+    transition: { staggerChildren: 0.05, staggerDirection: -1 },
+  },
+};
+
+export const Navigation = () => (
+  <motion.ul variants={variants1}>
+    {itemIds.map((i) => (
+      <MenuItem i={i} key={i} />
+    ))}
+  </motion.ul>
+);
+
+const itemIds = [0, 1, 2, 3, 4];
+
+const variants = {
+  open: {
+    y: 0,
+    opacity: 1,
+    transition: {
+      y: { stiffness: 1000, velocity: -100 },
+    },
+  },
+  closed: {
+    y: 50,
+    opacity: 0,
+    transition: {
+      y: { stiffness: 1000 },
+    },
+  },
+};
+
+const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
+
+function MenuItem({ i }) {
+  const style = { border: `2px solid ${colors[i]}` };
   return (
-    <div className="sticky top-0 bg-white shadow-lg z-50">
-      <header className="text-gray-700 body-font">
-        <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-          <Link
-            to="/"
-            className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
-          >
-            <img
-              src={require("../Static/ITHUB.png")}
-              className="h-10 w-10md:h-24md:w-24rounded-fullmx-automd:mx-0md:mr-6"
-              alt="Hello"
-            />
-            <span className=" text-xl">IT Hub</span>
-          </Link>
-          <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
-            <Link to="/" className="mr-6 hover:text-blue-400 home">
-              Home
-            </Link>
-            <Link
-              to="/scholorship"
-              className="mr-6 hover:text-blue-400 scholorships"
-            >
-              Scholorships
-            </Link>
-            <Link to="/about" className="hover:text-blue-400 about">
-              About Us
-            </Link>
-          </nav>
-          <button
-            className={
-              screen.width > 768
-                ? "inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0"
-                : "hidden"
-            }
-          >
-            Apply for a scholorship
-            <svg
-              fill="none"
-              stroke="currentColor"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              className="w-4 h-4 ml-1"
-              viewBox="0 0 24 24"
-            >
-              <path d="M5 12h14M12 5l7 7-7 7"></path>
-            </svg>
-          </button>
-        </div>
-      </header>
-    </div>
+    <motion.li
+      variants={variants}
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.95 }}
+    >
+      <div className="icon-placeholder" style={style} />
+      <div className="text-placeholder" style={style} />
+    </motion.li>
+  );
+}
+
+const sidebar = {
+  open: (height = 1000) => ({
+    clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
+    transition: {
+      type: "spring",
+      stiffness: 20,
+      restDelta: 2,
+    },
+  }),
+  closed: {
+    clipPath: "circle(30px at 40px 40px)",
+    transition: {
+      delay: 0.5,
+      type: "spring",
+      stiffness: 400,
+      damping: 40,
+    },
+  },
+};
+
+const Path = (props) => (
+  <motion.path
+    fill="transparent"
+    strokeWidth="3"
+    stroke="hsl(0, 0%, 18%)"
+    strokeLinecap="round"
+    {...props}
+  />
+);
+const MenuToggle = ({ toggle }) => (
+  <button onClick={toggle}>
+    <svg width="23" height="23" viewBox="0 0 23 23">
+      <Path
+        variants={{
+          closed: { d: "M 2 2.5 L 20 2.5" },
+          open: { d: "M 3 16.5 L 17 2.5" },
+        }}
+      />
+      <Path
+        d="M 2 9.423 L 20 9.423"
+        variants={{
+          closed: { opacity: 1 },
+          open: { opacity: 0 },
+        }}
+        transition={{ duration: 0.1 }}
+      />
+      <Path
+        variants={{
+          closed: { d: "M 2 16.346 L 20 16.346" },
+          open: { d: "M 3 2.5 L 17 16.346" },
+        }}
+      />
+    </svg>
+  </button>
+);
+
+export function Example() {
+  const [isOpen, toggleOpen] = useCycle(false, true);
+  const containerRef = useRef(null);
+  const { height } = useDimensions(containerRef);
+
+  return (
+    <motion.nav
+      initial={false}
+      animate={isOpen ? "open" : "closed"}
+      custom={height}
+      className="ham"
+      ref={containerRef}
+    >
+      <motion.div className="background" variants={sidebar} />
+      <Navigation />
+      <MenuToggle toggle={() => toggleOpen()} />
+    </motion.nav>
   );
 }

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import Header from "./componeents/Header";
+import { Example } from "./componeents/Header";
 import "./Static/custom.css";
 import Home from "./pages/Home";
 import Scholorships from "./pages/Scholorship";
@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="">
       <Router>
-        <Header />
+        <Example />
         <ScrollToTop />
         <AnimatePresence exitBeforeEnter>
           <Switch>
