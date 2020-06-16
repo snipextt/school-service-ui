@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Scholorships from "./pages/Scholorship";
 import About from "./pages/About";
 import Footer from "./componeents/Footer";
+import Logo from "./componeents/Logo";
 import {
   BrowserRouter as Router,
   Switch,
@@ -28,10 +29,11 @@ function App() {
       <Router>
         <Example />
         <ScrollToTop />
+        <Logo />
         <AnimatePresence exitBeforeEnter>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/scholorship" component={Scholorships} />
+            <Route exact path="/scholorships" component={Scholorships} />
             <Route exact path="/about" component={About} />
           </Switch>
         </AnimatePresence>

@@ -127,7 +127,7 @@ export default function Team() {
           </div>
           <div className="flex flex-wrap -m-2">
             {members.map((elem) => (
-              <MemberCard {...elem} key={Math.ceil(Math.random() * 100)} />
+              <MemberCard {...elem} key={Math.ceil(Math.random() * 1000)} />
             ))}
           </div>
         </div>

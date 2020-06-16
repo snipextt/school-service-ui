@@ -61,7 +61,7 @@ export default function Contact() {
               frameBorder={0}
             />
             <div className="bg-white relative flex flex-wrap py-6">
-              <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
+              <div className="lg:w-full px-6 mt-4 lg:mt-0">
                 <h2 className="title-font font-medium text-gray-900 tracking-widest text-sm">
                   EMAIL
                 </h2>

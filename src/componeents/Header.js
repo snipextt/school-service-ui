@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useRef } from "react";
 import { motion, useCycle } from "framer-motion";
-
+import { Link } from "react-router-dom";
 import { useEffect } from "react";
 
 // Naive implementation - in reality would want to attach
@@ -28,15 +28,26 @@ const variants1 = {
   },
 };
 
-export const Navigation = () => (
+export const Navigation = ({ toggle }) => (
   <motion.ul variants={variants1}>
-    {itemIds.map((i) => (
-      <MenuItem i={i} key={i} />
-    ))}
+    <MenuItem i={1} icon="home" link="/" route="Home" toggle={toggle} />
+    <MenuItem i={2} icon="users" link="/about" route="About" toggle={toggle} />
+    <MenuItem
+      i={3}
+      icon="graduation-cap"
+      link="/scholorships"
+      route="Scholorship"
+      toggle={toggle}
+    />
+    <MenuItem
+      i={0}
+      icon="book"
+      link="/courses"
+      route="Courses"
+      toggle={toggle}
+    />
   </motion.ul>
 );
-
-const itemIds = [0, 1, 2, 3, 4];
 
 const variants = {
   open: {
@@ -57,17 +68,23 @@ const variants = {
 
 const colors = ["#FF008C", "#D309E1", "#9C1AFF", "#7700FF", "#4400FF"];
 
-function MenuItem({ i }) {
-  const style = { border: `2px solid ${colors[i]}` };
+function MenuItem({ i, icon, link, route, toggle }) {
+  const style = { border: `2px solid ${colors[i]}`, color: colors[i] };
   return (
-    <motion.li
-      variants={variants}
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.95 }}
-    >
-      <div className="icon-placeholder" style={style} />
-      <div className="text-placeholder" style={style} />
-    </motion.li>
+    <div onClick={toggle}>
+      <motion.li
+        variants={variants}
+        whileHover={{ scale: 1.1 }}
+        whileTap={{ scale: 0.95 }}
+      >
+        <Link to={link} className="icon-placeholder" style={style}>
+          <i class={`fa fa-${icon} text-xl`} aria-hidden="true"></i>
+        </Link>
+        <div className="text-placeholder text-xs" style={style}>
+          {route}
+        </div>
+      </motion.li>
+    </div>
   );
 }
 
@@ -129,6 +146,15 @@ const MenuToggle = ({ toggle }) => (
 
 export function Example() {
   const [isOpen, toggleOpen] = useCycle(false, true);
+  useEffect(() => {
+    let ulSidebar = document.querySelector(".ham ul");
+    if (ulSidebar.style.display === "none") {
+      setTimeout(() => (ulSidebar.style.display = "flex"), 300);
+    } else {
+      setTimeout(() => (ulSidebar.style.display = "none"), 300);
+    }
+    return () => {};
+  }, [isOpen]);
   const containerRef = useRef(null);
   const { height } = useDimensions(containerRef);
 
@@ -141,7 +167,7 @@ export function Example() {
       ref={containerRef}
     >
       <motion.div className="background" variants={sidebar} />
-      <Navigation />
+      <Navigation toggle={() => toggleOpen()} />
       <MenuToggle toggle={() => toggleOpen()} />
     </motion.nav>
   );

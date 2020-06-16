@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import Hero from "../componeents/HeroScholor";
-import Steps from "../componeents/Steps";
 import Carousel from "../componeents/Carousel";
 import Form from "../componeents/Form";
 import { motion } from "framer-motion";
@@ -19,13 +18,12 @@ export default function Scholorship() {
   }, []);
   return (
     <motion.div
-      className="conatainer-scholor"
-      animate={{ x: "0" }}
-      initial={{ x: "-100vw" }}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
       transition={{
-        duration: 1,
+        duration: 1.5,
       }}
-      exit={{ x: "-100vw" }}
     >
       <Carousel />
 

@@ -15,11 +15,11 @@ export default function About() {
   }, []);
   return (
     <motion.div
-      animate={{ x: "0" }}
-      initial={{ x: "-100vw" }}
+      animate={{ opacity: 1 }}
+      initial={{ opacity: 0 }}
+      exit={{ opacity: 0 }}
       transition={{
-        duration: 1,
-        ease: "easeIn",
+        duration: 1.5,
       }}
     >
       <main className="profile-page">
