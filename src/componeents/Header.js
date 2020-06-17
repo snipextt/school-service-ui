@@ -149,9 +149,9 @@ export function Example() {
   useEffect(() => {
     let ulSidebar = document.querySelector(".ham ul");
     if (ulSidebar.style.display === "none") {
+      ulSidebar.parentNode.children[0].style.opacity = 0.8;
       setTimeout(() => {
         ulSidebar.style.display = "flex";
-        ulSidebar.parentNode.children[0].style.opacity = 0.8;
       }, 400);
     } else {
       setTimeout(() => (ulSidebar.style.display = "none"), 300);
