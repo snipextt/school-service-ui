@@ -149,9 +149,13 @@ export function Example() {
   useEffect(() => {
     let ulSidebar = document.querySelector(".ham ul");
     if (ulSidebar.style.display === "none") {
-      setTimeout(() => (ulSidebar.style.display = "flex"), 300);
+      setTimeout(() => {
+        ulSidebar.style.display = "flex";
+        ulSidebar.parentNode.children[0].style.opacity = 0.8;
+      }, 400);
     } else {
       setTimeout(() => (ulSidebar.style.display = "none"), 300);
+      ulSidebar.parentNode.children[0].style.opacity = 1;
     }
     return () => {};
   }, [isOpen]);
