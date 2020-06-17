@@ -149,7 +149,7 @@ export function Example() {
   useEffect(() => {
     let ulSidebar = document.querySelector(".ham ul");
     if (ulSidebar.style.display === "none") {
-      ulSidebar.parentNode.children[0].style.opacity = 0.8;
+      ulSidebar.parentNode.children[0].style.opacity = 0.9;
       setTimeout(() => {
         ulSidebar.style.display = "flex";
       }, 400);
