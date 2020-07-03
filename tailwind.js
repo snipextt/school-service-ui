@@ -18,6 +18,18 @@ module.exports = {
       black: "#000",
       white: "#fff",
 
+      secondary: {
+        100: "#7c8ba1",
+        200: "#667892",
+        300: "#506582",
+        400: "#3a5173",
+        500: "#243E63",
+        600: "#203859",
+        700: "#1d324f",
+        800: "#192b45",
+        900: "#16253b",
+      },
+
       gray: {
         100: "#f7fafc",
         200: "#edf2f7",
@@ -94,6 +106,7 @@ module.exports = {
         700: "#2b6cb0",
         800: "#2c5282",
         900: "#2a4365",
+        950: "#6415FF",
       },
       indigo: {
         100: "#ebf4ff",
@@ -149,6 +162,7 @@ module.exports = {
       "48": "12rem",
       "56": "14rem",
       "64": "16rem",
+      "96": "24rem",
     },
     backgroundColor: (theme) => theme("colors"),
     backgroundOpacity: (theme) => theme("opacity"),

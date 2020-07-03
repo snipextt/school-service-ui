@@ -24,15 +24,16 @@ export default function Hero() {
           minHeight: "75vh",
         }}
       >
-        <div
-          className="absolute top-0 w-full h-full bg-center bg-cover"
-          style={{
-            backgroundImage: `url(${heroImage})`,
-          }}
-        >
+        <video autoPlay loop id="myVideo">
+          <source
+            src={require("../Static/images/himanshu.jpg")}
+            type="video/mp4"
+          />
+        </video>
+        <div className="absolute top-0 w-full h-full bg-center bg-cover">
           <span
             id="blackOverlay"
-            className="w-full h-full absolute opacity-75 bg-black"
+            className="w-full h-full absolute opacity-50 bg-black"
           ></span>
         </div>
 
@@ -144,7 +145,7 @@ export default function Hero() {
             </div>
 
             <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
-              <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-pink-600">
+              <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-red-600">
                 <img
                   alt="..."
                   src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1051&q=80"
@@ -163,7 +164,7 @@ export default function Hero() {
                   >
                     <polygon
                       points="-30,95 583,95 583,65"
-                      className="text-pink-600 fill-current"
+                      className="text-red-600 fill-current"
                     ></polygon>
                   </svg>
                   <h4 className="text-l font-bold text-white">

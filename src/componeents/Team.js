@@ -115,14 +115,14 @@ export default function Team() {
   return (
     <div>
       <section className="text-gray-700 body-font">
-        <div className="container px-5 py-24 mx-auto">
+        <div className="container md:px-24 pt-6 pb-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-              Our Team
+              Meet These Amazing Folks
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-              Meet the best of the industry experts and trainers, all in one
-              place at IT Hub School!
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
           <div className="flex flex-wrap -m-2">

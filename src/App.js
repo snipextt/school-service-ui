@@ -2,10 +2,11 @@ import React, { useEffect } from "react";
 import { Example } from "./componeents/Header";
 import "./Static/custom.css";
 import Home from "./pages/Home";
-import Scholorships from "./pages/Scholorship";
+import Services from "./pages/Services";
 import About from "./pages/About";
 import Footer from "./componeents/Footer";
 import Logo from "./componeents/Logo";
+import Blog from "./pages/Blog";
 import {
   BrowserRouter as Router,
   Switch,
@@ -33,8 +34,9 @@ function App() {
         <AnimatePresence exitBeforeEnter>
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route exact path="/scholorships" component={Scholorships} />
+            <Route exact path="/services" component={Services} />
             <Route exact path="/about" component={About} />
+            <Route exact path="/blog" component={Blog} />
           </Switch>
         </AnimatePresence>
       </Router>

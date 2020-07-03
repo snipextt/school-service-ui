@@ -31,10 +31,7 @@ export default function Home() {
 
       <Hero />
       <div className="content-home ">
-        <Zoom>
-          <Content />
-          <Features />
-        </Zoom>
+        <Content />
       </div>
     </motion.div>
   );

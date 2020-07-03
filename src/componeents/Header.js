@@ -35,17 +35,11 @@ export const Navigation = ({ toggle }) => (
     <MenuItem
       i={3}
       icon="graduation-cap"
-      link="/scholorships"
-      route="Scholorship"
+      link="/services"
+      route="Services"
       toggle={toggle}
     />
-    <MenuItem
-      i={0}
-      icon="book"
-      link="/courses"
-      route="Courses"
-      toggle={toggle}
-    />
+    <MenuItem i={0} icon="book" link="/blog" route="Blog" toggle={toggle} />
   </motion.ul>
 );
 
