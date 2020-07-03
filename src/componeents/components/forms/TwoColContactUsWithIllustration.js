@@ -5,7 +5,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import {
   SectionHeading,
   Subheading as SubheadingBase,
-} from "../../misc/Headings.js";
+} from "../misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "../../components/misc/Buttons.js";
 import EmailIllustrationSrc from "../../../Static/drawkit-grape-pack-illustration-2.svg";
 

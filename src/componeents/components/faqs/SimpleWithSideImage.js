@@ -3,12 +3,9 @@ import { motion } from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
 import { css } from "styled-components/macro"; //eslint-disable-line
-import {
-  SectionHeading,
-  Subheading as SubheadingBase,
-} from "../../misc/Headings.js";
-import { ReactComponent as PlusIcon } from "../../../Static/icons8-chevron-down-64.svg";
-import { ReactComponent as MinusIcon } from "../../../Static/icons8-chevron-down-64.svg";
+import { SectionHeading, Subheading as SubheadingBase } from "../misc/Headings";
+import { ReactComponent as PlusIcon } from "../../../Static/down.svg";
+import { ReactComponent as MinusIcon } from "../../../Static/down.svg";
 
 const Container = tw.div`relative`;
 const Content = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20`;
