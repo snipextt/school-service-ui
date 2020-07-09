@@ -26,14 +26,14 @@ export default function Hero() {
       >
         <video autoPlay loop id="myVideo">
           <source
-            src={require("../Static/images/himanshu.jpg")}
+            src={require("../Static/Countdown - 2637.mp4")}
             type="video/mp4"
           />
         </video>
         <div className="absolute top-0 w-full h-full bg-center bg-cover">
           <span
             id="blackOverlay"
-            className="w-full h-full absolute opacity-50 bg-black"
+            className="w-full h-full absolute opacity-75 bg-black"
           ></span>
         </div>
 
@@ -68,23 +68,25 @@ export default function Hero() {
             y="0"
           >
             <polygon
-              className="text-gray-300 fill-current"
+              className="text-gray-900 fill-current"
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
         </div>
       </div>
-      <section className="pb-20 bg-gray-300 -mt-24">
+      <section className="pb-20 bg-gray-900 -mt-24">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap">
             <div className="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center">
-              <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div className="relative flex flex-col min-w-0 break-words bg-black w-full mb-8 shadow-lg rounded-lg">
                 <div className="px-4 py-5 flex-auto">
-                  <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-400">
+                  <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-600">
                     <i className="fas fa-award"></i>
                   </div>
-                  <h6 className="text-xl font-semibold">Excellent Teachers</h6>
-                  <p className="mt-2 mb-4 text-gray-600">
+                  <h6 className="text-xl text-white font-semibold">
+                    Excellent Teachers
+                  </h6>
+                  <p className="mt-2 mb-4 text-white">
                     Learn the way, you might never have imagined. At IT Hub, we
                     believe in quality education and teachers.
                   </p>
@@ -93,15 +95,15 @@ export default function Hero() {
             </div>
 
             <div className="w-full md:w-4/12 px-4 text-center">
-              <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div className="relative flex flex-col min-w-0 break-words bg-black w-full mb-8 shadow-lg rounded-lg">
                 <div className="px-4 py-5 flex-auto">
-                  <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-400">
+                  <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-600">
                     <i className="fas fa-retweet"></i>
                   </div>
-                  <h6 className="text-xl font-semibold">
+                  <h6 className="text-xl font-semibold text-white">
                     Hands On Expereience
                   </h6>
-                  <p className="mt-2 mb-4 text-gray-600">
+                  <p className="mt-2 mb-4 text-white">
                     Make projects as you progress your way learning with us.
                     Learn the best Industry practices with our experts.
                   </p>
@@ -110,14 +112,17 @@ export default function Hero() {
             </div>
 
             <div className="pt-6 w-full md:w-4/12 px-4 text-center">
-              <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+              <div className="relative flex flex-col min-w-0 break-words bg-black w-full mb-8 shadow-lg rounded-lg">
                 <div className="px-4 py-5 flex-auto">
-                  <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-green-400">
+                  <div className="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-red-600">
                     <i className="fas fa-fingerprint"></i>
                   </div>
-                  <h6 className="text-xl font-semibold">Learn Remotely</h6>
-                  <p className="mt-2 mb-4 text-gray-600">
-                    Remote resouces to learn in this hard time of pandemic!
+                  <h6 className="text-xl text-white font-semibold">
+                    Learn Remotely
+                  </h6>
+                  <p className="mt-2 mb-4 text-white">
+                    Make projects as you progress your way learning with us.
+                    Learn the best Industry practices with our experts.{" "}
                   </p>
                 </div>
               </div>
@@ -126,20 +131,20 @@ export default function Hero() {
 
           <div className="flex flex-wrap items-center mt-32">
             <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
-              <div className="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-red-600">
                 <i className="fas fa-graduation-cap text-xl"></i>
               </div>
-              <h3 className="text-3xl mb-2 font-semibold leading-normal">
+              <h3 className="text-3xl mb-2 text-white font-semibold leading-normal">
                 Join Our Webinars
               </h3>
-              <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-white">
                 Bored by staring at the screen and listening to recorded
                 lectures? Join IT HUB School, this is your one stop solution
                 when it comes to Live Training. We deliver the best &
                 professional learning modules that are job-oriented and
                 practical in nature.
               </p>
-              <button className="inline-flex rounded-lg my-6 duration-700 text-white bg-red-400 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded text-lg shadow-xl">
+              <button className="inline-flex rounded-lg my-6 duration-700 text-white bg-red-700 border-0 py-2 px-6 focus:outline-none hover:bg-red-900 rounded text-lg shadow-xl">
                 Enroll now !
               </button>
             </div>

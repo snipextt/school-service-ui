@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Hero from "../componeents/HeroHome";
 import Content from "../componeents/Content";
-import Features from "../componeents/Features";
 import { motion } from "framer-motion";
-import Zoom from "react-reveal/Zoom";
 
 export default function Home() {
   const [imageLoaded, setImageLoaded] = useState(false);

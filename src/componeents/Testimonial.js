@@ -27,11 +27,11 @@ const Image = styled.img((props) => [
   props.imageShadow && tw`shadow`,
 ]);
 
-const Subheading = tw(SubheadingBase)`text-center md:text-left`;
+const Subheading = tw(SubheadingBase)`text-center text-red-600 md:text-left`;
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-gray-600`;
+)`mt-4 text-white text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
+const Description = tw.p`mt-6 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-white`;
 
 const TestimonialSlider = styled(Slider)`
   ${tw`w-full mt-10 text-center md:text-left`}
@@ -47,16 +47,16 @@ const Testimonial = tw.div`outline-none h-full flex! flex-col`;
 const StarsContainer = styled.div``;
 const StarIcon = tw(
   StarIconBase
-)`inline-block w-5 h-5 text-orange-400 fill-current mr-1 last:mr-0`;
-const TestimonialHeading = tw.div`mt-4 text-xl font-bold`;
-const Quote = tw.blockquote`mt-4 mb-8 sm:mb-10 leading-relaxed font-medium text-gray-700`;
+)`inline-block w-5 h-5 text-red-400 fill-current mr-1 last:mr-0`;
+const TestimonialHeading = tw.div`mt-4 text-xl text-white font-bold`;
+const Quote = tw.blockquote`mt-4 mb-8 sm:mb-10 leading-relaxed font-medium text-white`;
 
 const CustomerInfoAndControlsContainer = tw.div`mt-auto flex justify-between items-center flex-col sm:flex-row`;
 
 const CustomerInfo = tw.div`flex flex-col sm:flex-row items-center justify-center lg:justify-start`;
 const CustomerProfilePicture = tw.img`rounded-full w-16 h-16 sm:w-20 sm:h-20`;
 const CustomerTextInfo = tw.div`text-center md:text-left sm:ml-6 mt-2 sm:mt-0`;
-const CustomerName = tw.h5`font-bold text-xl`;
+const CustomerName = tw.h5`font-bold text-white text-xl`;
 const CustomerTitle = tw.p`font-medium text-red-100`;
 
 const Controls = styled.div`
