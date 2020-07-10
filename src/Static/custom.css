@@ -1,6 +1,7 @@
 @import "~react-image-gallery/styles/css/image-gallery.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
 
+
 html,
 body {
   width: 100%;
@@ -73,8 +74,7 @@ body {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.content-scholor,
-.hero-scholor {
+.animate-hue {
   animation-name: hue;
   animation-duration: 5s;
   animation-iteration-count: infinite;
@@ -86,7 +86,7 @@ body {
   }
 
   to {
-    filter: hue-rotate(350deg);
+    filter: hue-rotate(360deg);
   }
 }
 

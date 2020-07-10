@@ -7,7 +7,7 @@ import {
   Subheading as SubheadingBase,
 } from "../misc/Headings.js";
 import { PrimaryButton as PrimaryButtonBase } from "../../components/misc/Buttons.js";
-import EmailIllustrationSrc from "../../../Static/drawkit-grape-pack-illustration-2.svg";
+import EmailIllustrationSrc from "../../../Static/group-oo-people-having-a-meeting-1367276.jpg";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col md:flex-row justify-between max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -22,31 +22,27 @@ const TextColumn = styled(Column)((props) => [
 
 const Image = styled.div((props) => [
   `background-image: url("${props.imageSrc}");`,
+  ` filter: grayscale(100%);`,
   tw`rounded bg-contain bg-no-repeat bg-center h-full`,
 ]);
 const TextContent = tw.div`lg:py-8 text-center md:text-left`;
 
-const Subheading = tw(SubheadingBase)`text-center text-blue-600 md:text-left`;
+const Subheading = tw(SubheadingBase)`text-center text-white md:text-left`;
 const Heading = tw(
   SectionHeading
-)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left leading-tight`;
-const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-secondary-100`;
+)`mt-4 font-black text-left text-3xl sm:text-4xl lg:text-5xl text-center md:text-left text-yellow-600 leading-tight`;
+const Description = tw.p`mt-4 text-center md:text-left text-sm md:text-base lg:text-lg font-medium leading-relaxed text-white`;
 
 const Form = tw.form`mt-8 md:mt-10 text-sm flex flex-col lg:flex-row`;
 const Input = tw.input`border-2 px-5 py-3 rounded focus:outline-none font-medium transition duration-300 hocus:border-primary-500`;
 
 const SubmitButton = tw(
   PrimaryButtonBase
-)`inline-block bg-blue-600 lg:ml-6 mt-6 lg:mt-0`;
+)`inline-block bg-yellow-700 hover:bg-yellow-900 lg:ml-6 mt-6 lg:mt-0`;
 
 export default ({
   subheading = "Contact Us",
-  heading = (
-    <>
-      Let's work on your <span tw="text-primary-500">next project</span>
-      <wbr /> together.
-    </>
-  ),
+  heading = <>Let's work on your next project together.</>,
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   submitButtonText = "Contact Me",
   formAction = "#",
@@ -72,11 +68,32 @@ export default ({
                 name="email"
                 placeholder="Your Email Address"
               />
-              <SubmitButton type="submit">{submitButtonText}</SubmitButton>
+              <SubmitButton type="submit" className="animate-hue">
+                {submitButtonText}
+              </SubmitButton>
             </Form>
           </TextContent>
         </TextColumn>
       </TwoColumn>
+      <div
+        className="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style={{ height: "70px", transform: "translateZ(0)" }}
+      >
+        <svg
+          className="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            className={`text-black fill-current`}
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
     </Container>
   );
 };

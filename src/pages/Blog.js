@@ -6,14 +6,14 @@ import OfficeImage from "../Static/office.jpg";
 const Hero = tw.div`absolute top-0 w-full h-full bg-center bg-cover`;
 const Overlay = tw.span`w-full h-full absolute opacity-50 bg-black`;
 const Svg = tw.svg`absolute bottom-0 overflow-hidden`;
-const Polygon = tw.polygon`text-gray-300 fill-current`;
+const Polygon = tw.polygon`text-gray-900 fill-current`;
 const TitleHeader = tw.h2` text-center text-gray-800 text-3xl lg:text-5xl font-black font-sans leading-tight my-4`;
 const BlogContent = tw.div`flex flex-col w-full px-8 lg:px-40 justify-center items-center my-12`;
 const BlogImage = tw.img`w-full bg-cover mb-12`;
-const HightlighterText = tw.span`text-red-600`;
+const HightlighterText = tw.span`text-yellow-700  `;
 const PostContainer = tw.div`w-full mb-12`;
-const PostHeaders = tw.h1`lg:text-4xl text-3xl text-gray-500 mb-2`;
-const PostContent = tw.p`text-lg leading-relaxed font-sans`;
+const PostHeaders = tw.h1`lg:text-4xl text-3xl text-white mb-2`;
+const PostContent = tw.p`text-lg leading-relaxed text-white font-sans`;
 export default function About() {
   useEffect(() => {
     //document.querySelector(".about").classList.toggle("nav-highlight");
@@ -60,14 +60,13 @@ export default function About() {
             </Svg>
           </div>
         </section>
-        <section className="relative py-16 bg-gray-300">
+        <section className="relative py-16 bg-gray-900">
           <div className="container mx-auto px-4">
-            <div className="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+            <div className="relative flex flex-col min-w-0 break-words bg-black w-full mb-6 shadow-xl rounded-lg -mt-64">
               <TitleHeader>
                 <HightlighterText>
-                  Placement <span className="text-blue-500">Gurukul</span>
-                </HightlighterText>{" "}
-                Blog
+                  Placement <span className="text-white">Gurukul</span> Blog
+                </HightlighterText>
               </TitleHeader>
               <BlogContent>
                 <BlogImage src={OfficeImage} />

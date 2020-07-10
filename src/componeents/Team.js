@@ -79,45 +79,15 @@ const members = [
     imgSrc: "Abhishek.jpg",
     designation: "Marketing Head",
   },
-  {
-    name: "Devanshi Pathak",
-    imgSrc: "Devanshi.jpg",
-    designation: "Technical Head",
-  },
-  {
-    name: "Venkatesh L Sharma",
-    imgSrc: "Venkatesh.jpg",
-    designation: "Cybersecurity Advisor",
-  },
-  {
-    name: "Sahaj Oberoi",
-    imgSrc: "Sahaj.jpg",
-    designation: "Python Trainer",
-  },
-  {
-    name: "Pratyaksh Singh",
-    imgSrc: "Pratyaksh.jpg",
-    designation: "Linux Trainer",
-  },
-  {
-    name: "Vaishali Bhardwag",
-    imgSrc: "himanshu.jpg",
-    designation: "Soft skills trainer",
-  },
-  {
-    name: "Aditya Kumar",
-    imgSrc: "Aditya.jpg",
-    designation: "Data Auditor",
-  },
 ];
 
 export default function Team() {
   return (
     <div>
       <section className="text-gray-700 body-font">
-        <div className="container md:px-24 pt-6 pb-24 mx-auto">
+        <div className="container md:px-24 pt-4 pb-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
-            <h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-white">
+            <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-yellow-700">
               Meet These Amazing Folks
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">

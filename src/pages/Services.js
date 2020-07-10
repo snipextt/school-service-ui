@@ -7,7 +7,7 @@ import Services from "../componeents/components/features/DashedBorderSixFeatures
 import Contact from "../componeents/components/forms/TwoColContactUsWithIllustration";
 import Faqs from "../componeents/components/faqs/SimpleWithSideImage";
 
-const Container = tw.div`bg-gray-200 w-full`;
+const Container = tw.div`bg-black w-full px-4`;
 
 export default () => {
   useEffect(() => {

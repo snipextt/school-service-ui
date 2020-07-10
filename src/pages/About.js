@@ -4,26 +4,33 @@ import Team from "../componeents/Team";
 import { motion } from "framer-motion";
 import testImage from "../Static/images/himanshu.jpg";
 import Testimontial from "../componeents/Testimonial";
+import style from "styled-components";
+import styled from "styled-components";
+
+let primary = "black";
+let secondary = "yellow-700";
+let white = "white";
 
 const Hero = tw.div`absolute top-0 w-full h-full bg-center bg-cover`;
 const Overlay = tw.span`w-full h-full absolute opacity-50 bg-black`;
 const Svg = tw.svg`absolute bottom-0 overflow-hidden`;
 const Polygon = tw.polygon`text-gray-900 fill-current`;
-const CardsAbout1 = tw.div`flex flex-col md:flex-row flex-wrap px-6 mt-6 md:mt-8`;
+const CardsAbout1 = tw.div`flex flex-col md:flex-row flex-wrap px-6 mt-6 md:mt-40`;
 const CardsAbout2 = tw.div`flex flex-col md:flex-row-reverse flex-wrap px-6 my-6 md:my-8`;
-const ImgAbout = tw.img` lg:w-2/5 w-full`;
-const TitleHeader = tw.h2`lg:text-left text-center text-white text-3xl lg:text-5xl font-black font-sans leading-tight lg:w-5/6`;
-const DescriptionContainer = tw.div`lg:px-10 w-full lg:w-3/5`;
-const SubtitleHeader = tw.h3`my-4 text-lg lg:text-left lg:my-0 text-center text-red-600`;
-const HightlighterText = tw.span`text-red-600`;
+const ImgAbout = tw.img` md:w-2/6  w-full`;
+const TitleHeader = tw.h2`lg:text-left text-center text-white text-3xl lg:text-5xl font-black font-sans leading-tight md:w-5/6`;
+const DescriptionContainer = tw.div`lg:px-10 w-full flex flex-col justify-center items-center md:w-4/6`;
+const SubtitleHeader = tw.h3`my-4 text-lg lg:text-left lg:my-0 text-center text-${white}`;
+
+const HightlighterText = tw.span`text-${secondary}`;
 const Content = tw.p`text-white lg:text-left text-center lg:w-5/6 w-full font-medium pt-6 text-xl`;
-const BlueButton = tw.button`bg-red-600 hover:bg-red-900 text-white font-bold py-2 px-4 rounded`;
-const ServiceSection = tw.div`flex flex-col flex-wrap justify-center items-center my-24`;
+const BlueButton = tw.button`bg-${secondary} hover:bg-yellow-900 text-white font-bold py-2 px-4 rounded`;
+const ServiceSection = tw.div`flex flex-col flex-wrap justify-center items-center my-40`;
 const ServiceContent = tw.p`leading-relaxed text-base text-white`;
-const ServiceContainer = tw.div`p-4 md:w-1/4 md:mb-0 mb-6 flex flex-col text-center items-center`;
+const ServiceContainer = tw.div`p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center`;
 const SvgWrapper = tw.div`w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0`;
 const CenteredHeader = tw.h2`text-center text-white text-3xl lg:text-5xl font-black font-sans leading-tight lg:w-5/6`;
-const ContentCenter = tw.div`flex justify-center lg:justify-start my-12`;
+const ContentCenter = tw.div`flex justify-center lg:justify-start my-8 w-full`;
 
 export default function About() {
   useEffect(() => {
@@ -72,32 +79,38 @@ export default function About() {
           </div>
         </section>
         <section className="relative py-16 bg-gray-900">
-          <div className="container mx-auto px-4">
-            <div className="relative flex flex-col min-w-0 break-words bg-black w-full mb-6 shadow-xl rounded-lg -mt-64">
+          <div className="md:container w-full mx-auto px-4 ">
+            <div className="relative flex flex-col min-w-0 break-words bg-black w-full mb-6 shadow-xl rounded-lg -mt-64 ">
               <CardsAbout2>
                 <ImgAbout src={testImage}></ImgAbout>
                 <DescriptionContainer>
-                  <SubtitleHeader>About Placement Gurukul</SubtitleHeader>
                   <TitleHeader>
-                    We are a <HightlighterText>Modern Design</HightlighterText>{" "}
+                    <SubtitleHeader>About Placement Gurukul</SubtitleHeader>
+                    We are a <HightlighterText>
+                      Modern Design
+                    </HightlighterText>{" "}
                     agency.
                   </TitleHeader>
                   <Content>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                    <ContentCenter>
+                      <BlueButton>Our Services</BlueButton>
+                    </ContentCenter>
                   </Content>
-                  <ContentCenter>
-                    <BlueButton>It Works</BlueButton>
-                  </ContentCenter>
                 </DescriptionContainer>
               </CardsAbout2>
               <CardsAbout1>
                 <ImgAbout src={testImage}></ImgAbout>
                 <DescriptionContainer>
-                  <SubtitleHeader>Our Vision</SubtitleHeader>
                   <TitleHeader>
+                    <SubtitleHeader>Our Vision</SubtitleHeader>
                     <HightlighterText>
                       Affordable{" "}
                       <HightlighterText
@@ -114,11 +127,15 @@ export default function About() {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut
+                    enim ad minim veniam, quis nostrud exercitation ullamco
+                    laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad
+                    minim veniam, quis nostrud exercitation ullamco laboris nisi
+                    ut aliquip ex ea commodo consequat.
+                    <ContentCenter>
+                      <BlueButton>Learn With Us!</BlueButton>
+                    </ContentCenter>
                   </Content>
-                  <ContentCenter>
-                    <BlueButton>It Works</BlueButton>
-                  </ContentCenter>
                 </DescriptionContainer>
               </CardsAbout1>
               <ServiceSection>
@@ -130,16 +147,16 @@ export default function About() {
                   Our Values
                 </SubtitleHeader>
                 <CenteredHeader>
-                  Cus<HightlighterText>tomer Supp</HightlighterText>ort
+                  Cust<HightlighterText>omer Supp</HightlighterText>ort
                 </CenteredHeader>
                 <div class="flex mt-6 justify-center">
-                  <div class="w-20 h-1 rounded-full bg-red-500 inline-flex"></div>
+                  <div class="w-20 h-1 rounded-full bg-yellow-500 inline-flex"></div>
                 </div>
                 <section className="text-gray-700 body-font">
                   <div className="container px-5 py-16 mx-auto">
                     <div className="flex flex-wrap justify-center sm:-m-4 -mx-4 -mb-10 -mt-4">
                       <ServiceContainer>
-                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-red-600">
+                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700">
                           <i className="fas fa-graduation-cap text-xl"></i>
                         </div>
                         <div className="flex-grow">
@@ -154,7 +171,7 @@ export default function About() {
                         </div>
                       </ServiceContainer>
                       <ServiceContainer>
-                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-red-600">
+                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700">
                           <i className="fas fa-graduation-cap text-xl"></i>
                         </div>
                         <div className="flex-grow">
@@ -169,7 +186,7 @@ export default function About() {
                         </div>
                       </ServiceContainer>
                       <ServiceContainer>
-                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-red-600">
+                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700">
                           <i className="fas fa-graduation-cap text-xl"></i>
                         </div>
                         <div className="flex-grow">

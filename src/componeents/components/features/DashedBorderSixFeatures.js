@@ -28,7 +28,7 @@ const Column = styled.div`
 `;
 
 const Card = styled.div`
-  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 border-dotted border-blue-500 rounded-lg mt-12 hover:border-solid hover:bg-blue-100 duration-500 cursor-pointer`}
+  ${tw`flex flex-col mx-auto max-w-xs items-center px-6 py-10 border-2 bg-white border-dotted border-yellow-500 hover:bg-yellow-100 rounded-lg mt-12 hover:border-solid duration-500 cursor-pointer`}
   .imageContainer {
     ${tw`text-center p-6 flex-shrink-0 relative`}
     img {
@@ -40,11 +40,11 @@ const Card = styled.div`
     ${tw`mt-6 text-center`}
   }
   duration-500 cursor-pointer .title {
-    ${tw`mt-2 font-bold text-xl leading-none text-blue-500`}
+    ${tw`mt-2 font-bold text-xl leading-none text-yellow-500`}
   }
 
   .description {
-    ${tw`mt-3 font-semibold text-secondary-100 text-sm leading-loose`}
+    ${tw`mt-3 font-semibold text-black text-sm leading-loose`}
   }
 `;
 
@@ -79,17 +79,23 @@ export default () => {
     <Container>
       <ThreeColumnContainer>
         <Heading>
-          <span className="text-blue-800">Our</span> Professional{" "}
-          <span tw="text-primary-500">Services</span>
+          <span className="text-white">Our Professional Services</span>
         </Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>
-              <span className="imageContainer">
+              <span className="imageContainer animate-hue">
                 <img src={card.imageSrc || defaultCardImage} alt="" />
               </span>
               <span className="textContainer">
-                <span className="title">{card.title || "Fully Secure"}</span>
+                <span
+                  className="title"
+                  style={{
+                    color: "black",
+                  }}
+                >
+                  {card.title || "Fully Secure"}
+                </span>
                 <p className="description">
                   {card.description ||
                     "Lorem ipsum donor amet siti ceali ut enim ad minim veniam, quis nostrud. Sic Semper Tyrannis. Neoas Calie artel."}
