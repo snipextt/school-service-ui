@@ -156,7 +156,7 @@ export default function About() {
                   <div className="container px-5 py-16 mx-auto">
                     <div className="flex flex-wrap justify-center sm:-m-4 -mx-4 -mb-10 -mt-4">
                       <ServiceContainer>
-                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700">
+                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700 animate-hue">
                           <i className="fas fa-graduation-cap text-xl"></i>
                         </div>
                         <div className="flex-grow">
@@ -171,7 +171,7 @@ export default function About() {
                         </div>
                       </ServiceContainer>
                       <ServiceContainer>
-                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700">
+                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700 animate-hue">
                           <i className="fas fa-graduation-cap text-xl"></i>
                         </div>
                         <div className="flex-grow">
@@ -186,7 +186,7 @@ export default function About() {
                         </div>
                       </ServiceContainer>
                       <ServiceContainer>
-                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700">
+                        <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700 animate-hue">
                           <i className="fas fa-graduation-cap text-xl"></i>
                         </div>
                         <div className="flex-grow">
