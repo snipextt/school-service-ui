@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import Hero from "../componeents/HeroHome";
 import Content from "../componeents/Content";
 import { motion } from "framer-motion";
 
 export default function Home() {
-  const [imageLoaded, setImageLoaded] = useState(false);
-
   useEffect(() => {
     //document.querySelector(".home").classList.toggle("nav-highlight");
     setTimeout(
@@ -15,7 +13,7 @@ export default function Home() {
     return () => {
       // document.querySelector(".home").classList.toggle("nav-highlight");
     };
-  }, [imageLoaded]);
+  }, []);
   return (
     <motion.div
       animate={{ opacity: 1 }}
@@ -28,9 +26,8 @@ export default function Home() {
       {/*<br />*/}
 
       <Hero />
-      <div className="content-home ">
-        <Content />
-      </div>
+
+      <Content />
     </motion.div>
   );
 }

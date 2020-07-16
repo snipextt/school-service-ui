@@ -4,10 +4,7 @@ import Team from "../componeents/Team";
 import { motion } from "framer-motion";
 import testImage from "../Static/images/himanshu.jpg";
 import Testimontial from "../componeents/Testimonial";
-import style from "styled-components";
-import styled from "styled-components";
 
-let primary = "black";
 let secondary = "yellow-700";
 let white = "white";
 
@@ -20,7 +17,7 @@ const CardsAbout2 = tw.div`flex flex-col md:flex-row-reverse flex-wrap px-6 my-6
 const ImgAbout = tw.img` md:w-2/6  w-full`;
 const TitleHeader = tw.h2`lg:text-left text-center text-white text-3xl lg:text-5xl font-black font-sans leading-tight md:w-5/6`;
 const DescriptionContainer = tw.div`lg:px-10 w-full flex flex-col justify-center items-center md:w-4/6`;
-const SubtitleHeader = tw.h3`my-4 text-lg lg:text-left lg:my-0 text-center text-${white}`;
+const SubtitleHeader = tw.p`my-4 text-lg lg:text-left lg:my-0 text-center text-${white}`;
 
 const HightlighterText = tw.span`text-${secondary}`;
 const Content = tw.p`text-white lg:text-left text-center lg:w-5/6 w-full font-medium pt-6 text-xl`;
@@ -28,9 +25,8 @@ const BlueButton = tw.button`bg-${secondary} hover:bg-yellow-900 text-white font
 const ServiceSection = tw.div`flex flex-col flex-wrap justify-center items-center my-40`;
 const ServiceContent = tw.p`leading-relaxed text-base text-white`;
 const ServiceContainer = tw.div`p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center`;
-const SvgWrapper = tw.div`w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0`;
 const CenteredHeader = tw.h2`text-center text-white text-3xl lg:text-5xl font-black font-sans leading-tight lg:w-5/6`;
-const ContentCenter = tw.div`flex justify-center lg:justify-start my-8 w-full`;
+const ContentCenter = tw.span`flex justify-center lg:justify-start my-8 w-full`;
 
 export default function About() {
   useEffect(() => {
@@ -149,8 +145,8 @@ export default function About() {
                 <CenteredHeader>
                   Cust<HightlighterText>omer Supp</HightlighterText>ort
                 </CenteredHeader>
-                <div class="flex mt-6 justify-center">
-                  <div class="w-20 h-1 rounded-full bg-yellow-500 inline-flex"></div>
+                <div className="flex mt-6 justify-center">
+                  <div className="w-20 h-1 rounded-full bg-yellow-500 inline-flex"></div>
                 </div>
                 <section className="text-gray-700 body-font">
                   <div className="container px-5 py-16 mx-auto">

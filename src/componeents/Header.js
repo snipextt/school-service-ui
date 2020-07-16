@@ -14,7 +14,7 @@ const useDimensions = (ref) => {
   useEffect(() => {
     dimensions.current.width = ref.current.offsetWidth;
     dimensions.current.height = ref.current.offsetHeight;
-  }, []);
+  }, [ref]);
 
   return dimensions.current;
 };
@@ -72,7 +72,7 @@ function MenuItem({ i, icon, link, route, toggle }) {
         whileTap={{ scale: 0.95 }}
       >
         <Link to={link} className="icon-placeholder" style={style}>
-          <i class={`fa fa-${icon} text-xl`} aria-hidden="true"></i>
+          <i className={`fa fa-${icon} text-xl`} aria-hidden="true"></i>
         </Link>
         <div className="text-placeholder text-xs" style={style}>
           {route}
