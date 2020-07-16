@@ -10,10 +10,7 @@ export default function Hero() {
         }}
       >
         <video autoPlay loop id="myVideo">
-          <source
-            src={require("../Static/Countdown - 2637.mp4")}
-            type="video/mp4"
-          />
+          <source src={require("../Static/cd.mp4")} type="video/mp4" />
         </video>
         <div className="absolute top-0 w-full h-full bg-center bg-cover">
           <span
