@@ -4,7 +4,7 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
   content: [
     "./src/**/*.html",
     "./src/**/*.vue",
-    "./src/**/*.jsx",
+    "./src/**/*.js",
     // etc.
   ],
 
@@ -19,6 +19,8 @@ const purgecss = require("@fullhuman/postcss-purgecss")({
     return broadMatches.concat(innerMatches);
   },
 });
+
+console.log(process.env.NODE_ENV);
 
 module.exports = {
   plugins: [

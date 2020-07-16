@@ -1,6 +1,4 @@
-@import "~react-image-gallery/styles/css/image-gallery.css";
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap");
-
 
 html,
 body {
@@ -8,6 +6,10 @@ body {
   height: 100%;
   margin: 0;
   overflow-x: hidden !important;
+}
+
+.bg-yellow-600 {
+  background-color: #d69e2e;
 }
 
 .hidden-loader {
@@ -56,9 +58,6 @@ body {
 .scholorships:hover {
   font-size: 20px;
 }
-
-
-
 
 .animate-hue {
   animation-name: hue;
@@ -208,7 +207,7 @@ body {
   display: none;
 }
 
-.ham .icon-placeholder:hover+.text-placeholder {
+.ham .icon-placeholder:hover + .text-placeholder {
   display: block;
   width: fit-content;
   height: 28px;

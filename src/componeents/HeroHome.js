@@ -1,9 +1,5 @@
 import React from "react";
 
-let primary = "black";
-let secondary = "yellow-600";
-let white = "white";
-
 export default function Hero() {
   return (
     <div>
@@ -57,29 +53,29 @@ export default function Hero() {
             y="0"
           >
             <polygon
-              className={`text-${primary} fill-current`}
+              className={`text-black fill-current`}
               points="2560 0 2560 100 0 100"
             ></polygon>
           </svg>
         </div>
       </div>
-      <section className={`pb-20 bg-${primary} -mt-24`}>
+      <section className={`pb-20 bg-black -mt-24`}>
         <div className="w-11/12 md:w-full lg:w-11/12 xl:w-9/12 mx-auto px-8">
           <div className="flex flex-wrap">
             <div className="lg:pt-12 pt-6 w-full xl:w-2/6  md:w-4/12 px-4 text-center">
               <div
-                className={`relative flex flex-col min-w-0 break-words bg-${secondary} w-full mb-8 shadow-lg rounded-lg`}
+                className={`relative flex flex-col min-w-0 break-words bg-yellow-600 w-full mb-8 shadow-lg rounded-lg`}
               >
                 <div className="px-4 py-5 flex-auto">
                   <div
-                    className={`text-${white} p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-2 md:mb-4 shadow-lg rounded-full bg-${primary}`}
+                    className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-2 md:mb-4 shadow-lg rounded-full bg-black`}
                   >
                     <i className="fas fa-users"></i>
                   </div>
-                  <h6 className={`text-xl text-${primary} font-semibold`}>
+                  <h6 className={`text-xl text-black font-semibold`}>
                     Happy Customer
                   </h6>
-                  <p className={`mt-2 mb-4 text-${primary}`}>
+                  <p className={`mt-2 mb-4 text-black`}>
                     Join our family of happy customers. At Placement Gurukul, we
                     strongly believe in quality and therefore provide the best
                     of services at an affordable price.
@@ -90,18 +86,18 @@ export default function Hero() {
 
             <div className="w-full md:w-4/12 xl:w-2/6 px-4 text-center">
               <div
-                className={`relative flex flex-col min-w-0 break-words bg-${secondary} w-full mb-8 shadow-lg rounded-lg`}
+                className={`relative flex flex-col min-w-0 break-words bg-yellow-600 w-full mb-8 shadow-lg rounded-lg`}
               >
                 <div className="px-4 py-5 flex-auto">
                   <div
-                    className={`text-${white} p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-2 md:mb-4 shadow-lg rounded-full bg-${primary}`}
+                    className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-2 md:mb-4 shadow-lg rounded-full bg-black`}
                   >
                     <i className="fas fa-heart"></i>
                   </div>
-                  <h6 className={`text-xl text-${primary} font-semibold`}>
+                  <h6 className={`text-xl text-black font-semibold`}>
                     Excellent Service
                   </h6>
-                  <p className={`mt-2 mb-4 text-${primary}`}>
+                  <p className={`mt-2 mb-4 text-black`}>
                     Looking for a website for your company, or a professional
                     content for your company? Our team has you covered. Let's
                     work on your next project together.
@@ -112,18 +108,18 @@ export default function Hero() {
 
             <div className="pt-6 w-full md:w-4/12 xl:w-2/6 px-4 text-center">
               <div
-                className={`relative flex flex-col min-w-0 break-words bg-${secondary} w-full mb-8 shadow-lg rounded-lg`}
+                className={`relative flex flex-col min-w-0 break-words bg-yellow-600 w-full mb-8 shadow-lg rounded-lg`}
               >
                 <div className="px-4 py-5 flex-auto">
                   <div
-                    className={`text-${white} p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-2 md:mb-4 shadow-lg rounded-full bg-${primary}`}
+                    className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-2 md:mb-4 shadow-lg rounded-full bg-black`}
                   >
                     <i className="fas fa-award"></i>
                   </div>
-                  <h6 className={`text-xl text-${primary} font-semibold`}>
+                  <h6 className={`text-xl text-black font-semibold`}>
                     Professional Team
                   </h6>
-                  <p className={`mt-2 mb-4 text-${primary}`}>
+                  <p className={`mt-2 mb-4 text-black`}>
                     We have an team of very experienced people for all our
                     professional services. Get in touch so we can turn your
                     dream in reality ;)
@@ -136,7 +132,7 @@ export default function Hero() {
           <div className="flex flex-wrap items-center mt-32">
             <div className="w-full md:w-5/12 px-4 mr-auto ml-auto">
               <div
-                className={`text-${primary} p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-${white}`}
+                className={`text-black p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white`}
               >
                 <i className="fas fa-code text-xl"></i>
               </div>
@@ -179,10 +175,10 @@ export default function Hero() {
                       className={`text-yellow-700 fill-current`}
                     ></polygon>
                   </svg>
-                  <h4 className={`text-l font-bold text-${white}`}>
+                  <h4 className={`text-l font-bold text-white`}>
                     How We Build Your Ideas
                   </h4>
-                  <p className={`text-md font-light mt-2 text-${white}`}>
+                  <p className={`text-md font-light mt-2 text-white`}>
                     We are committed to client's first policy. As soon as our
                     clients share their ideas with us, our marketing team starts
                     communicating with them with the best of solutions for their
