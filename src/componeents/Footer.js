@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import logo from "../Static/images/white.png";
+import logo from "../Static/images/white-min(1).png";
 import { ReactComponent as FacebookIcon } from "../Static/facebook-icon.svg";
 import { ReactComponent as TwitterIcon } from "../Static/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../Static/youtube-icon.svg";
