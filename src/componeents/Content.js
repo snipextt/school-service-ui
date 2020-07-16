@@ -56,7 +56,7 @@ export default function Content() {
                     whileTap={{ scale: 0.9 }}
                     alt="gallery"
                     className="w-full object-cover h-full object-center block cursor-pointer"
-                    src="https://pixabay.com/images/download/students-377789_640.jpg"
+                    src={require("../Static/students.jpg")}
                   />
                 </div>
                 <div className="md:p-2 p-1 w-full lg:w-1/2">
@@ -106,7 +106,7 @@ export default function Content() {
                     whileTap={{ scale: 0.9 }}
                     alt="gallery"
                     className="w-full object-cover h-full object-center block cursor-pointer"
-                    src="https://pixabay.com/images/download/students-377789_640.jpg"
+                    src={require("../Static/students.jpg")}
                   />
                 </div>
                 <div className="md:p-2 p-1 w-full lg:w-1/2">
