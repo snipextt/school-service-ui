@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import Blog from "./BlogCards";
 
 import Seperator from "./Seperator";
 // const Card = (props) => {
@@ -67,7 +68,7 @@ export default function Content() {
                     whileTap={{ scale: 0.9 }}
                     alt="gallery"
                     className="w-full object-cover h-full object-center block cursor-pointer"
-                    src="https://pixabay.com/get/57e5d04a494faa0df7c5997cc22133761d37dce057_640.jpg"
+                    src={require("../Static/classroom.jpg")}
                   />
                 </div>
                 <div className="md:p-2 p-1 w-full">
@@ -79,7 +80,7 @@ export default function Content() {
                     whileTap={{ scale: 0.9 }}
                     alt="gallery"
                     className="w-full h-full object-cover object-center block cursor-pointer"
-                    src="https://pixabay.com/get/53e9d1434352b10ff3d89960c62d3e7a1d37d6e15758_640.jpg"
+                    src={require("../Static/write.jpg")}
                   />
                 </div>
               </div>
@@ -117,13 +118,14 @@ export default function Content() {
                     whileTap={{ scale: 0.9 }}
                     alt="gallery"
                     className="w-full object-cover h-full object-center block cursor-pointer"
-                    src="https://pixabay.com/get/57e5d04a494faa0df7c5997cc22133761d37dce057_640.jpg"
+                    src={require("../Static/classroom.jpg")}
                   />
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <Blog />
       </div>
     </>
   );

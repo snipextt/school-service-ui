@@ -43,7 +43,7 @@ const SubmitButton = tw(
 export default ({
   subheading = "Contact Us",
   heading = <>Let's work on your next project together.</>,
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+  description = "Enter your email and our marketing team will be in touch with you in no time. We don't send promotional emails to our clients, so you can stop worrying about span!",
   submitButtonText = "Contact Me",
   formAction = "#",
   formMethod = "get",

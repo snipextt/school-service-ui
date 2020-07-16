@@ -32,7 +32,7 @@ const Answer = tw(motion.div)`hidden text-sm font-normal mt-4 text-gray-300`;
 export default ({
   subheading = "",
   heading = "Frequently Asked Questions",
-  description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "Got a question or a couple of them? Here are some frequently asked questions from our clients. Write us on our email if you have questions which are not listed here.",
   faqs = [
     {
       question: "Is lunch provided free of cost ?",

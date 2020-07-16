@@ -31,7 +31,7 @@ export default function Hero() {
             <div className="w-full lg:w-6/12 px-4 ml-auto mr-auto text-center">
               <div className="pr-12">
                 <h1 className="text-white font-semibold pl-8 lg: pl-0 text-4xl">
-                  Build your dreams.
+                  Build your Ideas..
                 </h1>
                 <p className="mt-4 text-lg text-gray-300 pl-8 lg:pl-0">
                   With the best experts from all over the industry and

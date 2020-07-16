@@ -1,15 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function seperator() {
   return (
     <>
       <div className="seperatorHome">
-        <a
-          href="https://tinyurl.com/webgitchallengeRegistration"
-          className="hbtn"
-        >
+        <Link to="/services" className="hbtn">
           Explore Services
-        </a>
+        </Link>
       </div>
     </>
   );

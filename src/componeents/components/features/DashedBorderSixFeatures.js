@@ -66,13 +66,37 @@ export default () => {
       imageSrc: ShieldIconImage,
       title: "Placement Oriented Courses",
       description:
-        "We create and manage ads that you need, from creation to deployment. Lorem ipsum donor sit amet consicou.",
+        "Hosting a training session? We love sharing knowledge. Invite our trainers to host your workshop sessions.",
     },
-    { imageSrc: SupportIconImage, title: "Website Designing" },
-    { imageSrc: CustomizeIconImage, title: "Mobile App Developement" },
-    { imageSrc: ReliableIconImage, title: "Pentesting and Security" },
-    { imageSrc: FastIconImage, title: "Graphics" },
-    { imageSrc: SimpleIconImage, title: "Content Writing" },
+    {
+      imageSrc: SupportIconImage,
+      title: "Website Designing",
+      description:
+        "A website reflects the attributes of a company. Get Yours made by our designers today.",
+    },
+    {
+      imageSrc: CustomizeIconImage,
+      title: "Mobile App Developement",
+      description:
+        "Have an amazing android or ios app idea? Share it with us. And we'll do the rest for you.",
+    },
+    {
+      imageSrc: ReliableIconImage,
+      title: "Pentesting and Security",
+      description:
+        "Security is a big thing on internet in 2020. Help us helping you to secure your application by contacting us.",
+    },
+    {
+      imageSrc: FastIconImage,
+      title: "Graphics",
+      description:
+        "Everyone likes a visually attractive art. Our designers are proficient in making one.",
+    },
+    {
+      imageSrc: SimpleIconImage,
+      title: "Content Writing",
+      description: "We love writting and also the people who hire us to write!",
+    },
   ];
 
   return (

@@ -84,15 +84,16 @@ const members = [
 export default function Team() {
   return (
     <div>
-      <section className="text-gray-700 body-font">
-        <div className="container md:px-24 pt-4 pb-24 mx-auto">
+      <section className="text-gray-700 body-font px-4">
+        <div className="container md:px-24  pb-24 mx-auto">
           <div className="flex flex-col text-center w-full mb-20">
             <h1 className="sm:text-3xl text-2xl font-bold title-font mb-4 text-yellow-700">
-              Meet These Amazing Folks
+              Leaders Behind The Idea
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Placement Gurukul is guided by a team of amazing people with a
+              vision in mind. At Placement Gurukul, we share a same thoughts and
+              ideologies about services and education.
             </p>
           </div>
           <div className="flex flex-wrap -m-2">

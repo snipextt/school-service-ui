@@ -52,7 +52,7 @@ export default () => {
         <TwoColumn>
           <LeftColumn>
             <Notification>
-              We have now launched operations in Europe.
+              We have added some experienced content writters to our team.
             </Notification>
             <Heading className="animate-hue">
               <span>Work with best</span>

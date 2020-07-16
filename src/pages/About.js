@@ -22,7 +22,7 @@ const SubtitleHeader = tw.p`my-4 text-lg lg:text-left lg:my-0 text-center text-$
 const HightlighterText = tw.span`text-${secondary}`;
 const Content = tw.p`text-white lg:text-left text-center lg:w-5/6 w-full font-medium pt-6 text-xl`;
 const BlueButton = tw.button`bg-${secondary} hover:bg-yellow-900 text-white font-bold py-2 px-4 rounded`;
-const ServiceSection = tw.div`flex flex-col flex-wrap justify-center items-center my-40`;
+const ServiceSection = tw.div`flex flex-col flex-wrap justify-center items-center my-12 md:my-40`;
 const ServiceContent = tw.p`leading-relaxed text-base text-white`;
 const ServiceContainer = tw.div`p-4 md:w-1/3 md:mb-0 mb-6 flex flex-col text-center items-center`;
 const CenteredHeader = tw.h2`text-center text-white text-3xl lg:text-5xl font-black font-sans leading-tight lg:w-5/6`;
@@ -83,19 +83,20 @@ export default function About() {
                   <TitleHeader>
                     <SubtitleHeader>About Placement Gurukul</SubtitleHeader>
                     We are a <HightlighterText>
-                      Modern Design
+                      Modern Service
                     </HightlighterText>{" "}
                     agency.
                   </TitleHeader>
                   <Content>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat.
+                    We work on projects having genres: tutorial writing,
+                    Tech-Writing, blog-Writing, non-technical content writing,
+                    news writing, troubleshooting, game development, web
+                    development, top-class school & college project creation,
+                    Penetration Testing, Bug-Hunting, educational content
+                    creation, video creation & editing, Cyber-Security
+                    consulting, career consultant, study materials creation,
+                    software development, mobile app development, research, Logo
+                    designing, banner designing.
                     <ContentCenter>
                       <BlueButton>Our Services</BlueButton>
                     </ContentCenter>
@@ -120,14 +121,14 @@ export default function About() {
                     </HightlighterText>
                   </TitleHeader>
                   <Content>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Ut
-                    enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi
-                    ut aliquip ex ea commodo consequat.
+                    We Conduct placement and job oriented webinars and courses
+                    for our students. Most of our live webinars are free of cost
+                    and available for everyone. At Placement Gurukul, we
+                    strongly believe in Affordable Education for everyone and
+                    hence we cut our profits to minimum in our online sessions
+                    and webinars. TO ensure tthe quality of education, all the
+                    training modules are made by the company leaders which
+                    includes the lasest topics and technoligies.
                     <ContentCenter>
                       <BlueButton>Learn With Us!</BlueButton>
                     </ContentCenter>
@@ -157,12 +158,12 @@ export default function About() {
                         </div>
                         <div className="flex-grow">
                           <h2 className="text-white text-lg title-font font-medium mb-3">
-                            Shooting Stars
+                            Best Project Ideas
                           </h2>
                           <ServiceContent>
-                            Blue bottle crucifix vinyl post-ironic four dollar
-                            toast vegan taxidermy. Gastropub indxgo juice
-                            poutine, ramps microdosing banh mi pug VHS try-hard.
+                            We share the best projects ideas and approach with
+                            our clients to thier technical projects and issues.
+                            Sharing is caring after all.
                           </ServiceContent>
                         </div>
                       </ServiceContainer>
@@ -172,12 +173,12 @@ export default function About() {
                         </div>
                         <div className="flex-grow">
                           <h2 className="text-white text-lg title-font font-medium mb-3">
-                            The Catalyzer
+                            On Time Services
                           </h2>
                           <ServiceContent>
-                            Blue bottle crucifix vinyl post-ironic four dollar
-                            toast vegan taxidermy. Gastropub indxgo juice
-                            poutine, ramps microdosing banh mi pug VHS try-hard.
+                            We deliver on time! At Placement Gurukul, we
+                            strongly believe that Time is Money and we make sure
+                            that our clients don't loose any of their money.
                           </ServiceContent>
                         </div>
                       </ServiceContainer>
@@ -187,12 +188,13 @@ export default function About() {
                         </div>
                         <div className="flex-grow">
                           <h2 className="text-white text-lg title-font font-medium mb-3">
-                            Neptune
+                            24/7 Support
                           </h2>
                           <ServiceContent>
-                            Blue bottle crucifix vinyl post-ironic four dollar
-                            toast vegan taxidermy. Gastropub indxgo juice
-                            poutine, ramps microdosing banh mi pug VHS try-hard.
+                            Even after delivering our service, we provide
+                            technical support to our clients free of cost for a
+                            period to make sure they have a smooth experience
+                            with our products.
                           </ServiceContent>
                         </div>
                       </ServiceContainer>
@@ -206,7 +208,7 @@ export default function About() {
                   textAlign: "center",
                 }}
               >
-                Our Team
+                Our Leaders
               </SubtitleHeader>
               <Team />
             </div>
