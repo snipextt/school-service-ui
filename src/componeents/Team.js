@@ -81,7 +81,7 @@ const members = [
   },
   {
     name: "Abhishek Maurya",
-    imgSrc: "abhishek.jpg",
+    imgSrc: "Abhishek.jpg",
     designation: "Marketing Head",
     linkedin: "https://www.linkedin.com/in/abhitnc",
   },
