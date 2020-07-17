@@ -38,7 +38,7 @@ export default function Content() {
                   Live Webinars
                 </span>
               </h1>
-              <p class="lg:pl-6 lg:w-1/3 mx-auto leading-relaxed text-base text-right">
+              <p className="lg:pl-6 lg:w-1/3 mx-auto leading-relaxed text-base text-right">
                 <button className="px-8 py-3 font-bold rounded focus:shadow-outline focus:outline-none transition duration-300 inline-block bg-yellow-700 hover:bg-yellow-900 lg:ml-6 mt-6 lg:mt-0 animate-hue">
                   Join Today
                 </button>
