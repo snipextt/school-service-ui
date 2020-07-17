@@ -38,8 +38,7 @@ export default function About() {
         <section className="relative block" style={{ height: "500px" }}>
           <Hero
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80')",
+              backgroundImage: `url(${require("../Static/board.jpg")})`,
             }}
           >
             <Overlay id="blackOverlay"></Overlay>

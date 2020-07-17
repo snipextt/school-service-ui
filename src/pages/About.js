@@ -2,9 +2,9 @@ import React, { useEffect } from "react";
 import tw from "twin.macro";
 import Team from "../componeents/Team";
 import { motion } from "framer-motion";
-import testImage from "../Static/images/himanshu.jpg";
+import meetingImage from "../Static/meeting.jpg";
+import schoolImage from "../Static/school.jpg";
 import Testimontial from "../componeents/Testimonial";
-
 let secondary = "yellow-700";
 let white = "white";
 
@@ -52,8 +52,7 @@ export default function About() {
         <section className="relative block" style={{ height: "500px" }}>
           <Hero
             style={{
-              backgroundImage:
-                "url('https://images.unsplash.com/photo-1499336315816-097655dcfbda?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2710&q=80')",
+              backgroundImage: `url(${require("../Static/board.jpg")})`,
             }}
           >
             <Overlay id="blackOverlay"></Overlay>
@@ -78,7 +77,7 @@ export default function About() {
           <div className="md:container w-full mx-auto px-4 ">
             <div className="relative flex flex-col min-w-0 break-words bg-black w-full mb-6 shadow-xl rounded-lg -mt-64 ">
               <CardsAbout2>
-                <ImgAbout src={testImage}></ImgAbout>
+                <ImgAbout src={meetingImage}></ImgAbout>
                 <DescriptionContainer>
                   <TitleHeader>
                     <SubtitleHeader>About Placement Gurukul</SubtitleHeader>
@@ -104,7 +103,7 @@ export default function About() {
                 </DescriptionContainer>
               </CardsAbout2>
               <CardsAbout1>
-                <ImgAbout src={testImage}></ImgAbout>
+                <ImgAbout src={schoolImage}></ImgAbout>
                 <DescriptionContainer>
                   <TitleHeader>
                     <SubtitleHeader>Our Vision</SubtitleHeader>

@@ -1,6 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
-const MemberCard = ({ imgSrc, name, designation }) => {
+const MemberCard = ({ imgSrc, name, designation, linkedin }) => {
   console.log(`${imgSrc}`);
   return (
     <motion.div
@@ -19,7 +19,7 @@ const MemberCard = ({ imgSrc, name, designation }) => {
           <p className="text-white">
             {designation}{" "}
             <a
-              href="https://www.linkedin.com/company/it-hub-school/"
+              href={linkedin}
               className=" text-white"
               target="_blank"
               rel="noopener noreferrer"
@@ -52,32 +52,38 @@ const members = [
     name: "Gaurav Roy",
     imgSrc: "gaurav.jpg",
     designation: "CEO and Founder",
+    linkedin: "https://www.linkedin.com/in/gauravroy62/",
   },
   {
     name: "Tushar Verma",
-    imgSrc: "himanshu.jpg",
+    imgSrc: "tushar.jpg",
     designation: "Co-founder",
+    linkedin: "https://www.linkedin.com/in/tushars25/",
   },
   {
     name: "Viswajit Nerker",
-    imgSrc: "himanshu.jpg",
+    imgSrc: "vishwa.jpg",
     designation: "COO",
+    linkedin: "https://www.linkedin.com/in/vishwajitnerkar/",
   },
   {
     name: "Manish Kumar",
-    imgSrc: "himanshu.jpg",
+    imgSrc: "Manish.jpg",
     designation: "CTO",
+    linkedin: "https://www.linkedin.com/in/manishkumarofficially",
   },
 
   {
     name: "Himanshu Parihar",
-    imgSrc: "himanshu.jpg",
+    imgSrc: "himanshu-min.jpg",
     designation: "Product and Growth Analyst",
+    linkedin: "https://www.linkedin.com/in/himanshuwordsmith",
   },
   {
     name: "Abhishek Maurya",
-    imgSrc: "Abhishek.jpg",
+    imgSrc: "abhishek.jpg",
     designation: "Marketing Head",
+    linkedin: "https://www.linkedin.com/in/abhitnc",
   },
 ];
 

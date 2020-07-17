@@ -2,7 +2,7 @@ import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
 import logo from "../Static/images/white-min(1).png";
-import { ReactComponent as FacebookIcon } from "../Static/facebook-icon.svg";
+import { ReactComponent as LinkedinIcon } from "../Static/linkedin-icon.svg";
 import { ReactComponent as TwitterIcon } from "../Static/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../Static/youtube-icon.svg";
 
@@ -37,19 +37,22 @@ export default () => {
             <LogoImg src={logo} />
           </LogoContainer>
           <LinksContainer>
-            <Link href="#">Home</Link>
-            <Link href="#">About</Link>
-            <Link href="#">Contact Us</Link>
-            <Link href="#">Blog</Link>
+            <Link href="/">Home</Link>
+            <Link href="/about">About</Link>
+            <Link href="/service">Services</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="http://certificate.placementgurukul.com">
+              Certificates
+            </Link>
           </LinksContainer>
           <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
+            <SocialLink href="https://www.linkedin.com/company/placement-gurukul/">
+              <LinkedinIcon />
             </SocialLink>
             <SocialLink href="https://twitter.com">
               <TwitterIcon />
             </SocialLink>
-            <SocialLink href="https://youtube.com">
+            <SocialLink href="https://www.youtube.com/channel/UCKTHNZof6gh3c9hOxlV9cXw">
               <YoutubeIcon />
             </SocialLink>
           </SocialLinksContainer>
