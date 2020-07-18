@@ -1,19 +1,27 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Hero from "../componeents/HeroHome";
 import Content from "../componeents/Content";
 import { motion } from "framer-motion";
 
 export default function Home() {
+  const [loadedImages, isLoaded] = useState(0);
+
   useEffect(() => {
     //document.querySelector(".home").classList.toggle("nav-highlight");
-    setTimeout(
-      () => document.querySelector("#loader").classList.add("hidden-loader"),
-      2000
-    );
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("load", (e) => {
+        isLoaded((prevState) => prevState + 1);
+      });
+    });
     return () => {
-      // document.querySelector(".home").classList.toggle("nav-highlight");
+      document.querySelector("#loader").classList.remove("hidden-loader");
     };
   }, []);
+  useEffect(() => {
+    console.log(loadedImages);
+    if (loadedImages > 9)
+      document.querySelector("#loader").classList.add("hidden-loader");
+  }, [loadedImages]);
   return (
     <motion.div
       animate={{ opacity: 1 }}

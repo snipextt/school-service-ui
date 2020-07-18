@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import tw from "twin.macro";
 import { motion } from "framer-motion";
 import OfficeImage from "../Static/office.jpg";
@@ -15,16 +15,24 @@ const PostContainer = tw.div`w-full mb-12`;
 const PostHeaders = tw.h1`lg:text-4xl text-3xl text-white mb-2`;
 const PostContent = tw.p`text-lg leading-relaxed text-white font-sans`;
 export default function About() {
+  const [loadedImages, isLoaded] = useState(0);
+
   useEffect(() => {
-    //document.querySelector(".about").classList.toggle("nav-highlight");
-    setTimeout(
-      () => document.querySelector("#loader").classList.add("hidden-loader"),
-      2000
-    );
+    //document.querySelector(".home").classList.toggle("nav-highlight");
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("load", (e) => {
+        isLoaded((prevState) => prevState + 1);
+      });
+    });
     return () => {
-      //document.querySelector(".about").classList.toggle("nav-highlight");
+      document.querySelector("#loader").classList.remove("hidden-loader");
     };
   }, []);
+  useEffect(() => {
+    console.log(loadedImages);
+    if (loadedImages > 3)
+      document.querySelector("#loader").classList.add("hidden-loader");
+  }, [loadedImages]);
   return (
     <motion.div
       animate={{ opacity: 1 }}

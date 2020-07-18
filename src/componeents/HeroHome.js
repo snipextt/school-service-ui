@@ -57,7 +57,7 @@ export default function Hero() {
         </div>
       </div>
       <section className={`pb-20 bg-black -mt-24`}>
-        <div className="w-11/12 md:w-full lg:w-11/12 xl:w-9/12 mx-auto px-8">
+        <div className="w-full md:w-full lg:w-11/12 xl:w-9/12 mx-auto px-2 m:px-8">
           <div className="flex flex-wrap">
             <div className="lg:pt-12 pt-6 w-full xl:w-2/6  md:w-4/12 px-4 text-center">
               <div

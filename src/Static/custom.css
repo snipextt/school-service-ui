@@ -12,14 +12,13 @@ body {
 
 .hidden-loader {
   height: 0 !important;
-  width: 0 !important;
-  transition: 600ms;
+  transition: 1000ms;
 }
 
 .loader {
   width: 100%;
   height: 100%;
-  background: white;
+  background: black;
   overflow: hidden;
   padding: 0;
   margin: 0;
@@ -34,7 +33,7 @@ body {
 }
 
 .loader-container div {
-  background: linear-gradient(180deg, #d309e1 0%, rgb(156, 26, 255) 100%);
+  background: linear-gradient(180deg, #ebff93 0%, rgb(255, 255, 40) 100%);
   border-radius: 30px;
   width: 150px;
   height: 150px;

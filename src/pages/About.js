@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import tw from "twin.macro";
 import Team from "../componeents/Team";
 import { motion } from "framer-motion";
@@ -29,16 +29,24 @@ const CenteredHeader = tw.h2`text-center text-white text-3xl lg:text-5xl font-bl
 const ContentCenter = tw.span`flex justify-center lg:justify-start my-8 w-full`;
 
 export default function About() {
+  const [loadedImages, isLoaded] = useState(0);
+
   useEffect(() => {
-    //document.querySelector(".about").classList.toggle("nav-highlight");
-    setTimeout(
-      () => document.querySelector("#loader").classList.add("hidden-loader"),
-      2000
-    );
+    //document.querySelector(".home").classList.toggle("nav-highlight");
+    document.querySelectorAll("img").forEach((img) => {
+      img.addEventListener("load", (e) => {
+        isLoaded((prevState) => prevState + 1);
+      });
+    });
     return () => {
-      //document.querySelector(".about").classList.toggle("nav-highlight");
+      document.querySelector("#loader").classList.remove("hidden-loader");
     };
   }, []);
+  useEffect(() => {
+    console.log(loadedImages);
+    if (loadedImages > 4)
+      document.querySelector("#loader").classList.add("hidden-loader");
+  }, [loadedImages]);
   return (
     <motion.div
       animate={{ opacity: 1 }}
