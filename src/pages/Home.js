@@ -19,7 +19,7 @@ export default function Home() {
   }, []);
   useEffect(() => {
     console.log(loadedImages);
-    if (loadedImages > 9)
+    if (loadedImages > 5)
       document.querySelector("#loader").classList.add("hidden-loader");
   }, [loadedImages]);
   return (
