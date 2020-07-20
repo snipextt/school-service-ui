@@ -40,7 +40,7 @@ const HeadingTitle = tw(
 )`lg:text-left text-yellow-700 leading-tight`;
 const Description = tw.p`max-w-md text-center mx-auto lg:mx-0 lg:text-left lg:max-w-none leading-relaxed text-sm sm:text-base lg:text-lg font-medium mt-4 text-white`;
 
-const QuoteContainer = tw.div`relative mt-10 lg:mt-20`;
+const QuoteContainer = tw.div`relative my-10 lg:my-16`;
 const Quote = tw.blockquote`text-center text-white lg:text-left text-sm sm:text-lg lg:text-xl xl:text-2xl`;
 const CustomerInfo = tw.div`mt-6 flex flex-col sm:flex-row items-center justify-center lg:justify-start`;
 const CustomerProfilePicture = tw.img`rounded-full w-20 h-20`;
@@ -58,7 +58,7 @@ const DecoratorBlob2 = tw(
 export default ({
   subheading = "",
   heading = "Testimonials",
-  description = "Here are what some of our amazing customers are saying about our hotels & tours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  description = "Here are what some of our amazing students are saying about our Placement Oriented Courses and Webinars. Describing their overall experience in our sessions.",
   testimonials = null,
   textOnLeft = false,
 }) => {
@@ -68,24 +68,20 @@ export default ({
    */
   const defaultTestimonials = [
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1512100356356-de1b84283e18?ixlib=rb-1.2.1&auto=format&fit=crop&w=1024&q=80",
-      profileImageSrc:
-        "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=3.25&w=512&h=512&q=80",
+      imageSrc: require("../Static/images/confrence.jpg"),
+      profileImageSrc: require("../Static/images/ph.jpg"),
       quote:
-        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Charlotte Hale",
-      customerTitle: "CEO, Delos Inc.",
+        "As usual, the class was awesome, with hands on training on real websites which is rare, as sites fix the bugs fast . Too good plus materials provided .",
+      customerName: "Prabal Deka",
+      customerTitle: "Student, Bug Bounty Training.",
     },
     {
-      imageSrc:
-        "https://images.unsplash.com/photo-1523952578875-e6bb18b26645?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1024&q=80",
-      profileImageSrc:
-        "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
+      imageSrc: require("../Static/images/teaching.jpg"),
+      profileImageSrc: require("../Static/images/ph.jpg"),
       quote:
-        "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-      customerName: "Adam Cuppy",
-      customerTitle: "Founder, EventsNYC",
+        "Learnt about CORS and IDOR today ,  Thanks for your bug bounty classes. Got to know about various bugs throughout the class.",
+      customerName: "Avn",
+      customerTitle: "Student, Bug Bounty Training",
     },
   ];
 
