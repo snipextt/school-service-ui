@@ -35,34 +35,34 @@ export default ({
   description = "Got a question or a couple of them? Here are some frequently asked questions from our clients. Write us on our email if you have questions which are not listed here.",
   faqs = [
     {
-      question: "Is lunch provided free of cost ?",
+      question: "What type of services does Placement Gurukul provide?",
       answer:
-        "Yes, it is, if you have a membership with us. Otherwise it is charged as per the menu. Some limits do apply as to how much items can be included in your lunch. This limit is enough for any one person and merely exists to discourage abusal of the system.",
+        "Android Application Development, full-stack Web application development, content (technical/non-technical) writing, security, online placement-oriented training, offline on-campus training, corporate training, study material designing and drafting, graphics designing, logo creation, banner designing, counseling, game development, and professional resume making.",
     },
     {
-      question: "Do you have 2 Bedroom suites ?",
+      question: "What is the cost of our services?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "The cost of the services we provide varies according to some criteria including but not limited to the type of work, amount of work, workload, development methodologies, level of agility, services, and microservices used, number of words (for content), types of systems (for pen-testing and bug hunting).",
     },
     {
-      question: "Are Wi-Fi costs included in the price ?",
+      question: "Is our team available on phone calls and emails?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Yes, our team is just a phone call away. Also, we assure our clients and students that we respond to the emails within 12 hours of receiving the emails.",
     },
     {
-      question: "Where can I reach you for support ?",
+      question: "What is expected from trainers if they want to join us?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "Course details have to be emailed to the directors or the CEO of Placement Gurukul. Other information depends on the situation. We will ask you to provide some other detailed information about the trainer and the course (if & when necessary).",
     },
     {
-      question: "What kind of SLA Guarantee do you provide ? ",
+      question: "Who to contact in case of any urgency or any query?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "You can raise a query in from our Contact Us page. The top 6 members of the team are listed in the hierarchy, you can also contact them via email or LinkedIn (DM) if urgent.",
     },
     {
-      question: "Where are the servers located ?",
+      question: "Do we provides integrity at work and words?",
       answer:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "We here at Placement Gurukul are professionals & highly skilled trainers from different verticals. Our main mantra is to work with total integrity, and deliver services on time while delivering the best online lectures to make career goals achievable as well.",
     },
   ],
 }) => {

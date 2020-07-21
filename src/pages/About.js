@@ -215,7 +215,7 @@ export default function About() {
                   textAlign: "center",
                 }}
               >
-                Our Leaders
+                Our Team
               </SubtitleHeader>
               <Team />
             </div>

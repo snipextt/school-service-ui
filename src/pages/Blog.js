@@ -43,7 +43,7 @@ export default function About() {
       }}
     >
       <main className="profile-page">
-        <section className="relative block" style={{ height: "500px" }}>
+        <section className="relative block" style={{ height: "450px" }}>
           <Hero
             style={{
               backgroundImage: `url(${require("../Static/board.jpg")})`,
@@ -68,11 +68,11 @@ export default function About() {
           </div>
         </section>
         <section className="relative py-16 bg-gray-900">
-          <div className="container mx-auto px-4">
+          <div className="w-full md:w-3/4 mx-auto px-4">
             <div className="relative flex flex-col min-w-0 break-words bg-black w-full mb-6 shadow-xl rounded-lg -mt-64">
               <TitleHeader>
                 <HightlighterText>
-                  Placement <span className="text-white">Gurukul</span> Blog
+                  Featured <span className="text-white">Blog</span> Post
                 </HightlighterText>
               </TitleHeader>
               <BlogContent>

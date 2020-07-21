@@ -79,7 +79,7 @@ const members = [
   },
   {
     name: "Manav Pathik",
-    imgSrc: "Abhishek.jpg",
+    imgSrc: "manav.jpg",
     designation: "Marketing Head",
     linkedin: "https://www.linkedin.com/in/manav-pathik-b23b601a6",
   },
@@ -117,12 +117,12 @@ const members = [
   {
     name: "Deepesh Pandey",
     imgSrc: "Abhishek.jpg",
-    designation: "Hackthebox expert",
+    designation: "Hackthebox Expert",
     linkedin: "https://www.linkedin.com/in/abhitnc",
   },
   {
     name: "Vishal ajwani",
-    imgSrc: "Abhishek.jpg",
+    imgSrc: "vishal.jpeg",
     designation: "Java Expert",
     linkedin: "https://www.linkedin.com/in/abhitnc",
   },
