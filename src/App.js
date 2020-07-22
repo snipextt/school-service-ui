@@ -8,6 +8,8 @@ import Footer from "./componeents/Footer";
 import Logo from "./componeents/Logo";
 import Blog from "./pages/Blog";
 import WildCardRedirect from "./WildCard";
+import BlogApp from "./componeents/BlogApp";
+import BlogApp2 from "./componeents/blog2";
 import {
   BrowserRouter as Router,
   Switch,
@@ -38,6 +40,9 @@ function App() {
             <Route exact path="/services" component={Services} />
             <Route exact path="/about" component={About} />
             <Route exact path="/blog" component={Blog} />
+            <Route exact path="/blog/app" component={BlogApp} />
+
+            <Route exact path="/blog/cybersecurity" component={BlogApp2} />
             <Route path="/*" component={WildCardRedirect} />
           </Switch>
         </AnimatePresence>

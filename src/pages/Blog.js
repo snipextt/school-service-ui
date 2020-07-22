@@ -1,21 +1,29 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import tw from "twin.macro";
 import { motion } from "framer-motion";
 import OfficeImage from "../Static/office.jpg";
+import WorkImage from "../Static/images/app.jpg";
+import CyberImage from "../Static/images/cyber-min.png";
 
 const Hero = tw.div`absolute top-0 w-full h-full bg-center bg-cover`;
 const Overlay = tw.span`w-full h-full absolute opacity-50 bg-black`;
 const Svg = tw.svg`absolute bottom-0 overflow-hidden`;
 const Polygon = tw.polygon`text-gray-900 fill-current`;
 const TitleHeader = tw.h2` text-center text-gray-800 text-3xl lg:text-5xl font-black font-sans leading-tight my-4`;
-const BlogContent = tw.div`flex flex-col w-full px-8 lg:px-40 justify-center items-center my-12`;
-const BlogImage = tw.img`w-full bg-cover mb-12`;
+const BlogContent = tw.div`flex flex-row flex-wrap w-full px-8 lg:px-32 justify-center items-center my-12`;
 const HightlighterText = tw.span`text-yellow-700  `;
-const PostContainer = tw.div`w-full mb-12`;
-const PostHeaders = tw.h1`lg:text-4xl text-3xl text-white mb-2`;
-const PostContent = tw.p`text-lg leading-relaxed text-white font-sans`;
+const FeaturedCard = tw.div`w-full xl:w-11/12 flex flex-col md:flex-row text-white bg-white rounded-lg `;
+const FeaturedImage = tw.img`object-cover h-80 w-full md:w-1/2 lg:w-8/12`;
+const FeaturedHeader = tw.h2`text-lg md:pt-8 text-center md:text-left font-bold text-yellow-600`;
+const FeaturedContent = tw.div`mt-8 md:mt-0 md:ml-8 w-full text-black px-4`;
+const BlogCard = tw.div`w-full md:w-1/2 xl:w-1/3 text-black mt-12 xl:mt-40 lg:px-6 rounded-lg`;
+const CardHeader = tw.h2`text-lg md:pt-2 text-center md:text-left rounded-t-lg font-bold text-yellow-600`;
+const CardImage = tw.img`w-full object-cover`;
+const CardContent = tw.div`bg-white w-full rounded-b-lg pb-8`;
+
 export default function About() {
-  const [loadedImages, isLoaded] = useState(0);
+  const [loadedImages, isLoaded] = useState(1);
 
   useEffect(() => {
     //document.querySelector(".home").classList.toggle("nav-highlight");
@@ -30,7 +38,7 @@ export default function About() {
   }, []);
   useEffect(() => {
     console.log(loadedImages);
-    if (loadedImages > 3)
+    if (loadedImages)
       document.querySelector("#loader").classList.add("hidden-loader");
   }, [loadedImages]);
   return (
@@ -68,7 +76,7 @@ export default function About() {
           </div>
         </section>
         <section className="relative py-16 bg-gray-900">
-          <div className="w-full md:w-3/4 mx-auto px-4">
+          <div className="w-full mx-auto px-4">
             <div className="relative flex flex-col min-w-0 break-words bg-black w-full mb-6 shadow-xl rounded-lg -mt-64">
               <TitleHeader>
                 <HightlighterText>
@@ -76,62 +84,208 @@ export default function About() {
                 </HightlighterText>
               </TitleHeader>
               <BlogContent>
-                <BlogImage src={OfficeImage} />
-                <PostContainer>
-                  <PostHeaders>Placement Gurukul Company</PostHeaders>
-                  <PostContent>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum
-                  </PostContent>
-                </PostContainer>
-                <BlogImage src={OfficeImage} />
-                <PostContainer>
-                  <PostHeaders>Placement Gurukul Company</PostHeaders>
-                  <PostContent>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum
-                  </PostContent>
-                </PostContainer>
-                <BlogImage src={OfficeImage} />
-                <PostContainer>
-                  <PostHeaders>Placement Gurukul Company</PostHeaders>
-                  <PostContent>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum
-                  </PostContent>
-                </PostContainer>
-                <BlogImage src={OfficeImage} />
-                <PostContainer>
-                  <PostHeaders>Placement Gurukul Company</PostHeaders>
-                  <PostContent>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum
-                  </PostContent>
-                </PostContainer>
+                <FeaturedCard>
+                  <FeaturedImage src={OfficeImage}></FeaturedImage>
+                  <FeaturedContent>
+                    <FeaturedHeader>Placement Gurukul Company</FeaturedHeader>
+                    <div class="flex justify-center md:justify-start ">
+                      <div class="w-16 h-1 rounded-full bg-yellow-600 inline-flex"></div>
+                    </div>
+                    <div className="h-full my-8">
+                      Join our family of happy customers. At Placement Gurukul,
+                      we strongly believe in quality and therefore provide the
+                      best of services at an affordable price.
+                      <Link
+                        to="/blog"
+                        className="text-yellow-600 flex items-center my-2 lg:mb-0"
+                      >
+                        Continue Reading
+                        <svg
+                          className="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </FeaturedContent>
+                </FeaturedCard>
+
+                <BlogCard>
+                  <CardImage src={OfficeImage}></CardImage>
+                  <CardContent>
+                    <div className="px-4 pt-8 ">
+                      <CardHeader>Placement Gurukul Company</CardHeader>
+                      <div class="flex justify-center md:justify-start mb-4">
+                        <div class="w-16 h-1 rounded-full bg-yellow-600 inline-flex"></div>
+                      </div>
+                      Join our family of happy customers. At Placement Gurukul,
+                      we strongly believe in quality and therefore provide the
+                      best of services at an affordable price.
+                      <Link
+                        to="/blog"
+                        className="text-yellow-600 flex items-center my-2 lg:mb-0"
+                      >
+                        Continue Reading
+                        <svg
+                          className="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </BlogCard>
+                <BlogCard>
+                  <CardImage src={OfficeImage}></CardImage>
+                  <CardContent>
+                    <div className="px-4 pt-8 ">
+                      <CardHeader>Placement Gurukul Company</CardHeader>
+                      <div class="flex justify-center md:justify-start mb-4">
+                        <div class="w-16 h-1 rounded-full bg-yellow-600 inline-flex"></div>
+                      </div>
+                      Join our family of happy customers. At Placement Gurukul,
+                      we strongly believe in quality and therefore provide the
+                      best of services at an affordable price.
+                      <Link
+                        to="/blog"
+                        className="text-yellow-600 flex items-center my-2 lg:mb-0"
+                      >
+                        Continue Reading
+                        <svg
+                          className="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </BlogCard>
+                <BlogCard>
+                  <CardImage src={WorkImage}></CardImage>
+                  <CardContent>
+                    <div className="px-4 pt-8 ">
+                      <CardHeader>Application Software</CardHeader>
+                      <div class="flex justify-center md:justify-start mb-4">
+                        <div class="w-16 h-1 rounded-full bg-yellow-600 inline-flex"></div>
+                      </div>
+                      Every user who is digitally active (and using computers,
+                      smartphones or any other digital assets) makes use of
+                      software daily. Computer systems are divided into 2 major
+                      components: the hardware and the software. This article
+                      will make you understand about the software and
+                      specifically the application software.
+                      <Link
+                        to="/blog/app"
+                        className="text-yellow-600 flex items-center my-2 lg:mb-0"
+                      >
+                        Continue Reading
+                        <svg
+                          className="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </BlogCard>
+                <BlogCard>
+                  <CardImage src={CyberImage}></CardImage>
+                  <CardContent>
+                    <div className="px-4 pt-8 ">
+                      <CardHeader>Cybersecurity and Web</CardHeader>
+                      <div class="flex justify-center md:justify-start mb-4">
+                        <div class="w-16 h-1 rounded-full bg-yellow-600 inline-flex"></div>
+                      </div>
+                      We live in an Era where technology is advancing at an
+                      unprecedented rate with that the rate of cyberthreats is
+                      also increasing rapidly. This year has been very tough on
+                      IT industry. With many more people working on online
+                      platforms due to the pandemic covid-19, when the whole
+                      world has become fully dependent on technology..
+                      <Link
+                        to="/blog/cybersecurity"
+                        className="text-yellow-600 flex items-center my-2 lg:mb-0"
+                      >
+                        Continue Reading
+                        <svg
+                          className="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </BlogCard>
+                <BlogCard>
+                  <CardImage src={WorkImage}></CardImage>
+                  <CardContent>
+                    <div className="px-4 pt-8 ">
+                      <CardHeader>Application Software</CardHeader>
+                      <div class="flex justify-center md:justify-start mb-4">
+                        <div class="w-16 h-1 rounded-full bg-yellow-600 inline-flex"></div>
+                      </div>
+                      Every user who is digitally active (and using computers,
+                      smartphones or any other digital assets) makes use of
+                      software daily. Computer systems are divided into 2 major
+                      components: the hardware and the software. This article
+                      will make you understand about the software and
+                      specifically the application software.
+                      <Link
+                        to="/blog/app"
+                        className="text-yellow-600 flex items-center my-2 lg:mb-0"
+                      >
+                        Continue Reading
+                        <svg
+                          className="w-4 h-4 ml-2"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                          strokeWidth={2}
+                          fill="none"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        >
+                          <path d="M5 12h14" />
+                          <path d="M12 5l7 7-7 7" />
+                        </svg>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </BlogCard>
               </BlogContent>
             </div>
           </div>
