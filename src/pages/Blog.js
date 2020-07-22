@@ -37,7 +37,7 @@ export default function About() {
     };
   }, []);
   useEffect(() => {
-    console.log(loadedImages);
+    console.log(loadedImages > 3);
     if (loadedImages)
       document.querySelector("#loader").classList.add("hidden-loader");
   }, [loadedImages]);
