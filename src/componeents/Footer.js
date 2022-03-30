@@ -1,7 +1,7 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import logo from "../Static/images/white-min(1).png";
+// import logo from "../Static/images/white-min(1).png";
 import { ReactComponent as LinkedinIcon } from "../Static/linkedin-icon.svg";
 import { ReactComponent as TwitterIcon } from "../Static/twitter-icon.svg";
 import { ReactComponent as YoutubeIcon } from "../Static/youtube-icon.svg";
@@ -34,7 +34,7 @@ export default () => {
       <Content>
         <Row>
           <LogoContainer>
-            <LogoImg src={logo} />
+            <LogoImg />
           </LogoContainer>
           <LinksContainer>
             <Link href="/">Home</Link>
