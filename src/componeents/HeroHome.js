@@ -67,15 +67,15 @@ export default function Hero() {
                   <div
                     className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-2 md:mb-4 shadow-lg rounded-full bg-black`}
                   >
-                    <i className="fas fa-users"></i>
+                    <i className="fa fa-users"></i>
                   </div>
                   <h6 className={`text-xl text-black font-semibold`}>
                     Happy Customer
                   </h6>
                   <p className={`mt-2 mb-4 text-black`}>
-                    Join our family of happy customers. At Placement Gurukul, we
-                    strongly believe in quality and therefore provide the best
-                    of services at an affordable price.
+                    Join our family of happy customers. At School, we strongly
+                    believe in quality and therefore provide the best of
+                    services at an affordable price.
                   </p>
                 </div>
               </div>
@@ -89,7 +89,7 @@ export default function Hero() {
                   <div
                     className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-2 md:mb-4 shadow-lg rounded-full bg-black`}
                   >
-                    <i className="fas fa-heart"></i>
+                    <i className="fa fa-heart"></i>
                   </div>
                   <h6 className={`text-xl text-black font-semibold`}>
                     Excellent Service
@@ -111,7 +111,7 @@ export default function Hero() {
                   <div
                     className={`text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-2 md:mb-4 shadow-lg rounded-full bg-black`}
                   >
-                    <i className="fas fa-award"></i>
+                    <i className="fa fa-trophy"></i>
                   </div>
                   <h6 className={`text-xl text-black font-semibold`}>
                     Professional Team
@@ -131,16 +131,16 @@ export default function Hero() {
               <div
                 className={`text-black p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white`}
               >
-                <i className="fas fa-code text-xl"></i>
+                <i className="fa fa-code text-xl"></i>
               </div>
               <h3 className="text-3xl mb-2 text-white font-semibold leading-normal">
                 Build Your Ideas
               </h3>
               <p className="text-lg font-light leading-relaxed mt-4 mb-0 text-white">
                 Get your technical projects built by our professional team.
-                Placement Gurukul is a one stop solution when it comes to
-                professional technical projects, services, and advice. Contact
-                us today with your ideas to get started.
+                School is a one stop solution when it comes to professional
+                technical projects, services, and advice. Contact us today with
+                your ideas to get started.
               </p>
               <button className="inline-flex rounded-lg my-4 duration-700 text-white bg-yellow-700 border-0 py-2 px-6 focus:outline-none hover:bg-yellow-900 rounded text-lg shadow-xl">
                 Our Services!

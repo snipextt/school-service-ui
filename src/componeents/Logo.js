@@ -3,11 +3,7 @@ import React from "react";
 export default function Logo() {
   return (
     <div className="logo-container">
-      <img
-        src={require("../Static/images/white-min(1).png")}
-        alt="logo"
-        className="logo"
-      />
+      <h2 className="logo text-2xl text-white">Logo</h2>
     </div>
   );
 }

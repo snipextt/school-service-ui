@@ -150,9 +150,9 @@ export default function Team() {
               Meet These Amazing Folks
             </h1>
             <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-white">
-              Placement Gurukul is guided by a team of amazing people with a
-              vision in mind. At Placement Gurukul, we share a same thought and
-              ideologies about our services and education.
+              School is guided by a team of amazing people with a vision in
+              mind. At School, we share a same thought and ideologies about our
+              services and education.
             </p>
           </div>
           <div className="flex flex-wrap -m-2">

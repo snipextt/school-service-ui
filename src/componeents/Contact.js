@@ -131,7 +131,7 @@ export default function Contact() {
               disabled={isSending}
             >
               {isSending ? (
-                <i className="fas fa-circle-notch fa-spin fa-2x"></i>
+                <i className="fa fa-circle-notch fa-spin fa-2x"></i>
               ) : (
                 "Send it in!"
               )}

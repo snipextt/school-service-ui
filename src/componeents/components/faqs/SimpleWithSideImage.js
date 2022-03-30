@@ -35,7 +35,7 @@ export default ({
   description = "Got a question or a couple of them? Here are some frequently asked questions from our clients. Write us on our email if you have questions which are not listed here.",
   faqs = [
     {
-      question: "What type of services does Placement Gurukul provide?",
+      question: "What type of services does School provide?",
       answer:
         "Android Application Development, full-stack Web application development, content (technical/non-technical) writing, security, online placement-oriented training, offline on-campus training, corporate training, study material designing and drafting, graphics designing, logo creation, banner designing, counseling, game development, and professional resume making.",
     },
@@ -52,7 +52,7 @@ export default ({
     {
       question: "What is expected from trainers if they want to join us?",
       answer:
-        "Course details have to be emailed to the directors or the CEO of Placement Gurukul. Other information depends on the situation. We will ask you to provide some other detailed information about the trainer and the course (if & when necessary).",
+        "Course details have to be emailed to the directors or the CEO of School. Other information depends on the situation. We will ask you to provide some other detailed information about the trainer and the course (if & when necessary).",
     },
     {
       question: "Who to contact in case of any urgency or any query?",
@@ -62,7 +62,7 @@ export default ({
     {
       question: "Do we provides integrity at work and words?",
       answer:
-        "We here at Placement Gurukul are professionals & highly skilled trainers from different verticals. Our main mantra is to work with total integrity, and deliver services on time while delivering the best online lectures to make career goals achievable as well.",
+        "We here at School are professionals & highly skilled trainers from different verticals. Our main mantra is to work with total integrity, and deliver services on time while delivering the best online lectures to make career goals achievable as well.",
     },
   ],
 }) => {

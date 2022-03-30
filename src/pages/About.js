@@ -88,7 +88,7 @@ export default function About() {
                 <ImgAbout src={meetingImage}></ImgAbout>
                 <DescriptionContainer>
                   <TitleHeader>
-                    <SubtitleHeader>About Placement Gurukul</SubtitleHeader>
+                    <SubtitleHeader>About School</SubtitleHeader>
                     We are a <HightlighterText>
                       Modern Service
                     </HightlighterText>{" "}
@@ -130,12 +130,12 @@ export default function About() {
                   <Content>
                     We Conduct placement and job oriented webinars and courses
                     for our students. Most of our live webinars are free of cost
-                    and available for everyone. At Placement Gurukul, we
-                    strongly believe in Affordable Education for everyone and
-                    hence we cut our profits to minimum in our online sessions
-                    and webinars. TO ensure tthe quality of education, all the
-                    training modules are made by the company leaders which
-                    includes the lasest topics and technoligies.
+                    and available for everyone. At School, we strongly believe
+                    in Affordable Education for everyone and hence we cut our
+                    profits to minimum in our online sessions and webinars. TO
+                    ensure tthe quality of education, all the training modules
+                    are made by the company leaders which includes the lasest
+                    topics and technoligies.
                     <ContentCenter>
                       <BlueButton>Learn With Us!</BlueButton>
                     </ContentCenter>
@@ -161,7 +161,7 @@ export default function About() {
                     <div className="flex flex-wrap justify-center sm:-m-4 -mx-4 -mb-10 -mt-4">
                       <ServiceContainer>
                         <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700 animate-hue">
-                          <i className="fas fa-graduation-cap text-xl"></i>
+                          <i className="fa fa-graduation-cap text-xl"></i>
                         </div>
                         <div className="flex-grow">
                           <h2 className="text-white text-lg title-font font-medium mb-3">
@@ -176,22 +176,22 @@ export default function About() {
                       </ServiceContainer>
                       <ServiceContainer>
                         <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700 animate-hue">
-                          <i className="fas fa-graduation-cap text-xl"></i>
+                          <i className="fa fa-graduation-cap text-xl"></i>
                         </div>
                         <div className="flex-grow">
                           <h2 className="text-white text-lg title-font font-medium mb-3">
                             On Time Services
                           </h2>
                           <ServiceContent>
-                            We deliver on time! At Placement Gurukul, we
-                            strongly believe that Time is Money and we make sure
-                            that our clients don't loose any of their money.
+                            We deliver on time! At School, we strongly believe
+                            that Time is Money and we make sure that our clients
+                            don't loose any of their money.
                           </ServiceContent>
                         </div>
                       </ServiceContainer>
                       <ServiceContainer>
                         <div className="text-white p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-yellow-700 animate-hue">
-                          <i className="fas fa-graduation-cap text-xl"></i>
+                          <i className="fa fa-graduation-cap text-xl"></i>
                         </div>
                         <div className="flex-grow">
                           <h2 className="text-white text-lg title-font font-medium mb-3">

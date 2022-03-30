@@ -87,14 +87,14 @@ export default function About() {
                 <FeaturedCard>
                   <FeaturedImage src={OfficeImage}></FeaturedImage>
                   <FeaturedContent>
-                    <FeaturedHeader>Placement Gurukul Company</FeaturedHeader>
+                    <FeaturedHeader>School & Service Company</FeaturedHeader>
                     <div class="flex justify-center md:justify-start ">
                       <div class="w-16 h-1 rounded-full bg-yellow-600 inline-flex"></div>
                     </div>
                     <div className="h-full my-8">
-                      Join our family of happy customers. At Placement Gurukul,
-                      we strongly believe in quality and therefore provide the
-                      best of services at an affordable price.
+                      Join our family of happy customers. At School, we strongly
+                      believe in quality and therefore provide the best of
+                      services at an affordable price.
                       <Link
                         to="/blog"
                         className="text-yellow-600 flex items-center my-2 lg:mb-0"
@@ -121,13 +121,13 @@ export default function About() {
                   <CardImage src={OfficeImage}></CardImage>
                   <CardContent>
                     <div className="px-4 pt-8 ">
-                      <CardHeader>Placement Gurukul Company</CardHeader>
+                      <CardHeader>School & Service Company</CardHeader>
                       <div class="flex justify-center md:justify-start mb-4">
                         <div class="w-16 h-1 rounded-full bg-yellow-600 inline-flex"></div>
                       </div>
-                      Join our family of happy customers. At Placement Gurukul,
-                      we strongly believe in quality and therefore provide the
-                      best of services at an affordable price.
+                      Join our family of happy customers. At School, we strongly
+                      believe in quality and therefore provide the best of
+                      services at an affordable price.
                       <Link
                         to="/blog"
                         className="text-yellow-600 flex items-center my-2 lg:mb-0"
@@ -153,13 +153,13 @@ export default function About() {
                   <CardImage src={OfficeImage}></CardImage>
                   <CardContent>
                     <div className="px-4 pt-8 ">
-                      <CardHeader>Placement Gurukul Company</CardHeader>
+                      <CardHeader>School & Service Company</CardHeader>
                       <div class="flex justify-center md:justify-start mb-4">
                         <div class="w-16 h-1 rounded-full bg-yellow-600 inline-flex"></div>
                       </div>
-                      Join our family of happy customers. At Placement Gurukul,
-                      we strongly believe in quality and therefore provide the
-                      best of services at an affordable price.
+                      Join our family of happy customers. At School, we strongly
+                      believe in quality and therefore provide the best of
+                      services at an affordable price.
                       <Link
                         to="/blog"
                         className="text-yellow-600 flex items-center my-2 lg:mb-0"

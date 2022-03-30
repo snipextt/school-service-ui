@@ -94,7 +94,7 @@ export default function Content() {
                     whileTap={{ scale: 0.9 }}
                     alt="gallery"
                     className="w-full h-full object-cover object-center block cursor-pointer"
-                    src="https://pixabay.com/images/download/workplace-1245776_640.jpg"
+                    src="https://pixabay.com/get/g5d33301d78f29bfee0f68fffba37014a9215f77e8308e75822a03b3c9ff3ccd71c491b61c5053b5b42bc559cbbfafdc7e15489f3925b3058bc094e103f3db66250c44958a10e271903ae72c49c261fc9_640.jpg"
                   />
                 </div>
                 <div className="md:p-2 p-1 w-full lg:w-1/2">

@@ -57,7 +57,7 @@ export default () => {
             </SocialLink>
           </SocialLinksContainer>
           <CopyrightText>
-            &copy; Copyright 2020, Placement Gurukul. All Rights Reserved.
+            &copy; Copyright 2020, School. All Rights Reserved.
             <a href="https://github.com/snipextt/pg-website/blob/master/LICENSE.md/LICENSE.md">
               {" "}
               Check Open Source License.
