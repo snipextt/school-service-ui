@@ -41,8 +41,8 @@ export default () => {
             <Link href="/about">About</Link>
             <Link href="/service">Services</Link>
             <Link href="/blog">Blog</Link>
-            <Link href="http://certificate.placementgurukul.com">
-              Certificates
+            <Link href="https://github.com/snipextt/school-service-ui">
+              Source
             </Link>
           </LinksContainer>
           <SocialLinksContainer>
@@ -58,10 +58,7 @@ export default () => {
           </SocialLinksContainer>
           <CopyrightText>
             &copy; Copyright 2020, School. All Rights Reserved.
-            <a href="https://github.com/snipextt/pg-website/blob/master/LICENSE.md/LICENSE.md">
-              {" "}
-              Check Open Source License.
-            </a>
+            <a href="https://github.com/snipextt/pg-website/blob/master/LICENSE.md/LICENSE.md"></a>
           </CopyrightText>
         </Row>
       </Content>
